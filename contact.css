@@ -20,5 +20,21 @@
     font-size: 30px;
 }
 
+#contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
 
+#map-container {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+#map-container h2 {
+    font-size: 24px;
+    color: #0c356a;
+}
 
