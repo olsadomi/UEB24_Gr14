@@ -17,7 +17,35 @@
             <div id="map-container">
                 <h2>Harta</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.0921316734953!2d21.026934475425666!3d42.574566921523584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13537ccdea831979%3A0x7bd7c5dfd98fabc!2sPrishtina%20International%20Airport%20%E2%80%9CAdem%20Jashari%E2%80%9D!5e0!3m2!1sen!2s!4v1733827840536!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+            </div>
+            <div id="form-container">
+                <h3>Plotesoni formen</h3>
+                <form id="contact-form">
+                    <label for="name">Emri</label>
+                    <input type="text" id="name" name="name" minlength="2" maxlength="20" required placeholder="Shkruani emrin tuaj..."><br>
+
+                    <label for="surname">Mbiemri</label>
+                    <input type="text" id="surname" name="surname" minlength="2" maxlength="20" required placeholder="Shkruani mbiemrin tuaj..."><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Email-adresa juaj...">
+
+                    <label for="phone">Numri i telefonit:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Numri juaj i telefonit...">
+
+                    <fieldset>
+                        <legend>Zgjedhni llojin e mesazhit</legend>
+                        <input type="radio" name="lloji" id="sugjerim">
+                        <label for="sugjerim" class="radio-label">Sugjerim</label>
+                        <input type="radio" name="lloji" id="ankese">
+                        <label for="ankese" class="radio-label">Ankese</label>
+                        <input type="radio" name="lloji" id="kerkese">
+                        <label for="kerkese" class="radio-label">Kerkese</label>
+                        <input type="radio" name="lloji" id="tjeter">
+                        <label for="tjeter" class="radio-label">Tjeter</label>
+                      </fieldset>
+                      
+                </form>
             </div>
         </section>
     </body>
