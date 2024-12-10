@@ -52,7 +52,8 @@
                     <label for="tjeter" class="radio-label">Tjeter</label>
                 </fieldset>
 
-                <textarea placeholder="Shkruani mesazhin tuaj..." id="mesazhi" rows="3" cols="50"></textarea><br>
+                <textarea placeholder="Shkruani mesazhin tuaj..." id="mesazhi" rows="3" cols="50" oninput="countchar()"></textarea>
+                <p style="font-size: 12px;">Numri i karaktereve: <output id="charCount"></output></p>
 
                 <label for="contact-method">Ne cilen menyre deshironi te kontaktoheni?</label>
                 <input list="contact-methods" id="contact-method" name="contact-method" placeholder="Psh. Email">
