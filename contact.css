@@ -158,6 +158,35 @@ input[type="checkbox"] {
     transform: scale(1.1); 
 }
 
+/*---------------------specific contacts---------------------------*/
+
+#specific-contacts {
+    background-color: #015cbe5b;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);;
+}
+
+#specific-contacts h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#specific-contacts details {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#specific-contacts summary {
+    font-weight: bold;
+    color:#0174be;
+}
 
 
 
