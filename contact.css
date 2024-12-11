@@ -172,6 +172,7 @@ input[type="checkbox"] {
 #specific-contacts h2{
     text-align: center;
     margin-bottom: 20px;
+    color: #0c356a;
 }
 
 #specific-contacts details {
@@ -224,6 +225,45 @@ input[type="checkbox"] {
     background-color: #0056b3;
 }
 
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#social-media-contact {
+    background-color: #eef5ff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#social-media-contact h2 {
+    margin-bottom: 20px;
+    color: #0c356a;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    border: none;
+}
 
 
 
