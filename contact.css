@@ -132,5 +132,20 @@ legend {
     font-weight: bold;
 }
 
+.menyra {
+    margin: 20px 0;
+}
+
+.menyra label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.menyra input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 
 
