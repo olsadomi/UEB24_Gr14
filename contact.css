@@ -188,6 +188,44 @@ input[type="checkbox"] {
     color:#0174be;
 }
 
+#specific-contacts summary:hover {
+    color: #0c356a;
+}
+
+#personal-acc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#personal-acc-form label {
+    font-weight: bold;
+    color: #0c356a;
+}
+
+#personal-acc-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#personal-acc-form button {
+    padding: 10px;
+    background-color: #0174be;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+#personal-acc-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
 
 
 
