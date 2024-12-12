@@ -25,7 +25,7 @@ section{
 .news-home{
     width: 100%;
     min-height: 440px; 
-    background-image: url(bg-image.jpg);
+    background-image: url(fotot/bg-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
