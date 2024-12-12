@@ -14,15 +14,31 @@
             </div>
 
             <div class="links">
-                <a id="nav-link" href="">Ballina</a>
-                <a id="nav-link" href="">Fluturime</a>
-                <a id="nav-link" href="">Serviset</a>
-                <a id="nav-link" href="">Lajme</a>
-                <a id="nav-link" href="">Rreth Nesh</a>
-                <a id="nav-link" href="">Konakt</a>
+                <a href="">Ballina</a>
+                <a href="">Fluturime</a>
+                <a href="">Serviset</a>
+                <a href="">Lajme</a>
+                <a href="">Rreth Nesh</a>
+                <a href="">Konakt</a>
             </div>
         </div>
-        
     </nav>
+    <div class="test" style="height: 2000px;"></div>
+
+    <script>
+        var container = document.querySelector(".container")
+      
+
+        function changeBg(){
+            var scrollValue = window.scrollY;
+            if(scrollValue>10){
+                container.classList.add("scroll")
+            }else{
+                container.classList.remove("scroll")
+            }
+        }
+
+        window.addEventListener("scroll", changeBg);
+    </script>
 </body>
 </html>
