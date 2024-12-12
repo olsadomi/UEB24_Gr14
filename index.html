@@ -5,8 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <title>Prishtina Airport</title>
+
+    <!-- ICON LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    
 </head>
 <body>
+    <nav>
+        <div id="nav-holder"></div>
+    </nav> 
+
+    <header>
+        <div class="title-text">
+            <h3>Mire se erdhet ne <br>
+                <span id="title-main">Prishtina International Airport</span><br>
+                <span id="title-second">Adem Jashari</span>
+            </h3>
+        </div>
+
+        <section class="flash-cards">
+            <div class="flashcard" id="first-flashcard">
+                <img src="Photos/flash-airplane.png" alt="">
+                <h2>Pse ne?</h2>
+                <p>Ofrimi i shërbimit të shkëlqyer dhe një staf i trajnuar sigurojnë udhëtime të sigurta dhe komode. Zgjedhja jonë do t'ju bëjë të ndiheni të sigurt dhe të kënaqur gjatë çdo udhëtimi.</p>
+            </div>
     
+            <div class="flashcard" id="second-flashcard">
+                <img src="Photos/flash-luggage.png" alt="">
+                <h2>Siguria?</h2>
+                <p>Siguria është prioriteti ynë kryesor. Përdorimi i teknologjive moderne dhe masave të rrepta na mundëson të sigurojmë udhëtime të sigurta dhe pa shqetësime për çdo pasagjer.</p>
+            </div>
+    
+            <div class="flashcard" id="third-flashcard">
+                <img src="Photos/flash-location.png" alt="">
+                <h2>Destinacionet?</h2>
+                <p>Ofrimi i fluturimeve për destinacione të ndryshme anembanë botës. Ne lidhim qytete të njohura dhe mundësojmë udhëtime të paharrueshme për çdo udhëtar.</p>
+            </div>
+        </section>
+    </header>
+
+
+    <div class="bg-container">
+        <section id="experience">
+            <h1 class="section-title">Si deshironi ta perjetoni Prishtinen?</h1>
+
+            <div class="airport-city">
+                <div>
+                    <i class="fa-solid fa-plane" style="font-size: 2rem; transform: rotate(-45deg);margin-right: 10px;"></i>
+                    <p>Brenda ne Aeroport</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-city" style="font-size: 2rem; margin-right: 10px;"></i>
+                    <p>Eksploro Qytetin</p>
+                </div>
+            </div>
+
+            <div class="exp-photo-container">
+                <div class="exp-photo">
+                    <!-- <img src="Photos/exp-cafe.jpg" alt=""> -->
+                    <p>Shijoni kafenë tuaj 
+                            të preferuar në aeroport.
+                    </p>
+                </div>
+
+                <div class="exp-photo">
+                    <!-- <img src="Photos/exp-shopping.webp" alt=""> -->
+                    <p>Dyqanet ofrojnë markat
+                        më të njohura ndërkombëtare.
+                    </p>
+                </div>
+
+                <div class="exp-photo">
+                    <!-- <img src="Photos/exp-kidsplayzone.webp" alt=""> -->
+                    <p>Zona e lojërave për fëmijë 
+                            për argëtim të sigurt.
+                    </p>
+                </div>
+
+                <div class="exp-photo">
+                    <!-- <img src="Photos/exp-dutyfree.webp" alt=""> -->
+                    <p>Blini produkte pa taksa
+                             në dyqanet Duty Free.
+                    </p>
+                </div>
+
+                
+                <div class="exp-photo">
+                    <!-- <img src="Photos/exp-relax.webp" alt=""> -->
+                    <p>Pushoni dhe relaksohuni
+                             para fluturimit tuaj.
+                    </p>
+                </div>
+                <button id="next">&#10095;</button>
+            </div>
+
+
+        </section>
+
+    </div>
+
+    <script src="home.js"></script>
 </body>
 </html>
