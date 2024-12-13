@@ -79,7 +79,7 @@ section{
     transition: all 0.3s ease; 
 }
 .post-box:hover{
-    transform: translateY(-7px);
+    transform: scale(1.05);
 }
 .post-img{
     width: 100%;
