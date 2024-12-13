@@ -76,6 +76,10 @@ section{
     box-shadow: 0 4px 14px hsl(355deg 25% 15%/10%);
     padding: 15px;
     border-radius: 10px;
+    transition: all 0.3s ease; 
+}
+.post-box:hover{
+    transform: translateY(-7px);
 }
 .post-img{
     width: 100%;
