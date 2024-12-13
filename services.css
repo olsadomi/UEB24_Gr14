@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 @keyframes in {
     0% {background-color:none; color:#ffc436}
     100% {background-color:white; color:#0c356a;}
@@ -69,4 +73,26 @@
     font-size:20px ;
     font-weight: 500;
     text-decoration: none;
+}
+
+
+/*------------------------------------SERVICES*/
+
+#services-header {
+    background: url(services-bg-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#services-header h1 {
+    font-weight: 600;
+    color: #fff0ce;
+    margin-top: 140px;
+    font-size: 48px;
 }
