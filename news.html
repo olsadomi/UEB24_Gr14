@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div id="nav-placeholder"></div>
     <!--Krijimi i nje section-->
     <section class="news-home">
         <div class="news-text">
@@ -22,7 +23,6 @@
         <span class="filter-item" data-filter="destinacionet">Destinacionet</span>
         <span class="filter-item" data-filter="evente">Evente</span>
         <span class="filter-item" data-filter="risi">Risi</span>
-        <span class="filter-item" data-filter="shikuarat">Me te shikuarat</span>
     </div>
 
     <!--Postimet-->
@@ -171,6 +171,12 @@
     
 
     <script src="news.js"></script>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+            $("#footer-placeholder").load("footer.html");
+        })
+    </script>
 </body>
 
 </html>

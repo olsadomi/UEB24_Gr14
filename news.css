@@ -28,6 +28,7 @@ section{
     background-image: url(fotot/bg-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center -100px;
     display: grid;
     justify-content: center;
     align-items: center;
