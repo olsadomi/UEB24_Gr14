@@ -23,16 +23,17 @@ body{
 }
 
 header{
-    height:800px;
+    min-height:800px;
     background-image: url("Photos/cover.jpg");
     background-repeat: no-repeat;
     background-position:center center;
-    background-size: cover;
+    background-size:cover;
     box-sizing: border-box;
     padding: 0 120px;
     z-index: 1;
     box-shadow: gray 0px 0px 8px 3px;
     position: relative;
+  
 
 }
 
