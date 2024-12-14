@@ -12,6 +12,7 @@
     font-size: 14px;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 p{
@@ -97,7 +98,7 @@ header{
 }
 
 .flashcard h2{
-    font-size: 2em;
+    font-size: 2vw;
     color: var(--lightblue);
     text-decoration: underline var(--yellow) 4px;
     margin-bottom: 15px;
@@ -105,14 +106,15 @@ header{
 
 .flashcard p{
     text-align: center;
+    font-size: 1.3vw;
 }
 
-/* ----------- TEST -------- */
+/* ----------- EXPERIENCES -------- */
 .bg-container{
     background-image: url("Photos/bg-cover2.jpg");
-    background-repeat: repeat-y;
+    background-repeat:no-repeat;
     background-position:  -10% 40%;
-    background-size:45% 75%;
+    background-size:100vh 95vw;
     filter: blur();
     width: 100%;
     height: 2000px;
@@ -123,10 +125,8 @@ header{
 }
 
 #experience{
-    background-color: red;
     box-sizing: border-box;
-    padding: 0 120px;
-    width: 85%;
+    width: 87%;
     height: auto;
     position: absolute;
     top: 12%;
@@ -136,59 +136,136 @@ header{
 }
 
 #experience .section-title{
-    font-size: 35px;
+    font-size: 2.6vw;
     color: var(--lightblue);
     text-decoration: underline var(--yellow) 4px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
-#experience .airport-city{
+#experience .experience-filter{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 55%;
     height: 60px;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
-#experience .airport-city div{
+#experience .experience-filter div{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 49.5%;
     height: inherit;
-    background-color: var(--blue);
-    color: white;
+}
+#experience .experience-filter div:hover{
+    cursor: pointer;
 }
 
-#experience .airport-city .icon{
-    font-size: 20px;
+
+#experience .experience-filter p{
+    font-size: 1.3vw;
 }
 
 .exp-photo-container{
-    background-color: #FFC436;
     width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    gap: 2vw;
+    padding-top: 8vh;
+    transition: all 0.5s ease-in-out;
 }
 
 .exp-photo{
-    min-width: 250px;
-    border: #0174BE 2px solid;
-    height: 250px;
-    background-color: white;
-    transition: transform 0.5s ease-in-out;
+    width: 15vw;
+    border-radius: 5%;
+    height: 40vh;
     position: relative;
+    box-shadow: gray 0 0 6px 5px;
+    transition: transform 0.5s ease-in-out;
+    background-position: -15px ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-bottom: 7px;
+    transition: all 0.3s ease-in-out;
+}
+.exp-photo:hover{
+    transform: translateY(-15px);
+    transform: scale(1.05);
 }
 
-.active{
-    border: 2px orange solid;
+
+.exp-photo p{
+    font-weight: 500;
+    font-size: 0.9vw;
+    color: white;
+    padding: 0 10px;
+    background-color: #0176be6e;
+    margin: 0 5px;
+    border-radius: 12px;
+    text-shadow: 0px 0px 5px 5px var(--blue);
+    border: var(--lightblue) 3px solid;
 }
+
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.airport.active{
+    display:grid;
+    animation: fadeIn 0.7s;
+}
+
+.airport{
+    display: none;
+}
+
+#plane{
+    background-color: #69a8cf;
+    color: var(--blue);
+}
+
+#plane.active{
+    background-color:var(--blue);
+    color: white;
+}
+
+.city{
+    display: none;
+}
+
+.city.active{
+    display: grid;
+    animation: fadeIn 0.7s;
+}
+
+#city{
+    background-color: #69a8cf;
+    color: var(--blue);
+}
+#city.active{
+    background-color:var(--blue);
+    color: white;   
+}
+  
 
 
 
