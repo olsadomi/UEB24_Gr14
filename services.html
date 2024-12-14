@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    <script src="sevices.js"></script>
     <div id="nav-bar-placeholder">
         <nav>
             <div class="container">
@@ -186,26 +185,31 @@
                 <h3><b>Hertz</b></h3>
                 <img src="car-rental-1.jpg">
                 <p><i>Sherbehu ne Hertz - me mijera lokacione ne gjithe boten!</i></p>
-                <button onclick="showDetails('car1')">Detajet</button>
+                <button onclick="showDetails(0)">Detajet</button>
             </div>
             <div class="car-rental-brand">
                 <h3><b>Europcar</b></h3>
                 <img src="car-rental-2.jpg">
                 <p><i>Sherbime te mrekullueshme, makina te reja, cmime marramendese!</i></p>
-                <button onclick="showDetails('car2')">Detajet</button>
+                <button onclick="showDetails(1)">Detajet</button>
             </div>
             <div class="car-rental-brand">
                 <h3><b>AVIS</b></h3>
                 <img src="car-rental-3.jpg">
                 <p><i>Perzgjedh nga larmishmeria e pafundme e makinave qe ofrojme!</i></p>
-                <button onclick="showDetails('car3')">Detajet</button>
+                <button onclick="showDetails(2)">Detajet</button>
             </div>
         </div>
 
-        <div class="brand-details" style="display: none;"></div>
-        <div class="brand-details" style="display: none;"></div>
-        <div class="brand-details" style="display: none;"></div>
+        <div id="tab">
+            <div id="tab-content">
+                <span id="close-button">&times;</span>
+                <div id="tab-details"></div>
+            </div>
+        </div>
+        
     </section>
+    <script src="sevices.js"></script>
 </body>
 
 </html>
