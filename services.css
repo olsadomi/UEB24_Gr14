@@ -131,3 +131,58 @@ canvas {
     padding: 10px 20px;
     border-radius: 10px;
 }
+
+/*--------------------------where to buy tickets---------------------*/
+#where-to-buy-tickets-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #fff0ce;
+    position: relative;
+}
+
+#where-to-buy-tickets-section h2 {
+    font-size: 24px;
+    color: #0c356a;
+    background: #0c356a;
+    color: #fff0ce;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#where-to-buy-tickets-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#where-to-buy-tickets-section table th {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+#where-to-buy-tickets-section table td {
+    border: 2px dashed #0174be;
+    padding: 8px;
+    text-align: center;
+}
+
+#where-to-buy-tickets-section th {
+    background-color: #ffc436;
+    color: #0c356a;
+}
+
+
+
+
