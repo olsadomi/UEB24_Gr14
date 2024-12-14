@@ -36,51 +36,51 @@
     <section id="what-we-offer-section">
         <h2>Cfare ofrojme ne?</h2>
         <canvas id="circleCanvas" width="600" height="200"></canvas>
-    
+
         <script>
             const canvas = document.getElementById("circleCanvas");
             const ctx = canvas.getContext("2d");
-        
+
             const circles = [
                 { x: 100, y: 100, radius: 75, color: "#0c356a", text: "Sherbim Klienti 24/7", dx: 0.5, dy: 0.5 },
                 { x: 300, y: 100, radius: 75, color: "#ffc436", text: "Hapesire komode", dx: -0.5, dy: 0.5 },
                 { x: 500, y: 100, radius: 75, color: "#0174be", text: "Teknologji moderne", dx: 0.5, dy: -0.5 },
             ];
-        
+
             function drawCircle(circle) {
                 ctx.beginPath();
                 ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
                 ctx.fillStyle = circle.color;
                 ctx.fill();
                 ctx.closePath();
-        
+
                 ctx.fillStyle = "#fff";
                 ctx.font = "16px sans-serif";
                 ctx.textAlign = "center";
                 ctx.textBaseline = "middle";
                 ctx.fillText(circle.text, circle.x, circle.y);
             }
-        
+
             function animate() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height); 
-        
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
                 circles.forEach(circle => {
                     drawCircle(circle);
-        
+
                     circle.x += circle.dx;
                     circle.y += circle.dy;
-    
+
                     if (circle.x + circle.radius > canvas.width || circle.x - circle.radius < 0) {
-                        circle.dx = -circle.dx;  
+                        circle.dx = -circle.dx;
                     }
                     if (circle.y + circle.radius > canvas.height || circle.y - circle.radius < 0) {
-                        circle.dy = -circle.dy;  
+                        circle.dy = -circle.dy;
                     }
                 });
-        
+
                 requestAnimationFrame(animate);
             }
-        
+
             animate();
         </script>
     </section>
@@ -162,21 +162,21 @@
 
     <section id="wifi-section">
         <h2>Interneti</h2>
-    <button class="wifi-button">Klikoni ketu per detajet shtese</button>
-    <div class="message-box">Kemi një befasi për ju! Ne ofrojmë FREE WI-FI në çdo hapësirë të aeroportit tonë!</div>
+        <button class="wifi-button">Klikoni ketu per detajet shtese</button>
+        <div class="message-box">Kemi një befasi për ju! Ne ofrojmë FREE WI-FI në çdo hapësirë të aeroportit tonë!</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".wifi-button").click(function() {
-                $(".message-box").fadeOut(300, function() {
-                    $(this)
-                        .slideDown(500)
-                        .animate({ opacity: 1 }, 400);
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".wifi-button").click(function () {
+                    $(".message-box").fadeOut(300, function () {
+                        $(this)
+                            .slideDown(700)
+                            .animate({ opacity: 1 }, 400);
+                    });
                 });
             });
-        });
-    </script>
+        </script>
     </section>
 </body>
 
