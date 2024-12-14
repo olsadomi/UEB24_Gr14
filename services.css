@@ -189,14 +189,14 @@ canvas {
     align-items: center;
     gap: 10px;
     margin: 20px auto;
-    min-height: 300px;
+    min-height: 350px;
     min-width: 300px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%; 
     max-width: 800px;
     box-sizing: border-box;
-    background-color: #fff0ce;
+    border: 20px solid #ffc436;
     position: relative;
 }
 
@@ -238,6 +238,89 @@ canvas {
     border-radius: 5px;
     display: none;
     text-align: center;
+}
+
+#car-rentals-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #fff0ce;
+    position: relative;
+}
+
+#car-rentals-section h2 {
+    font-size: 24px;
+    background: #0c356a;
+    color: #fff0ce;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#car-rental-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.car-rental-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.car-rental-brand img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.car-rental-brand h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0c356a;
+}
+
+.car-rental-brand p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0px;
+}
+
+.car-rental-brand button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffc436;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.car-rental-brand button:hover {
+    background-color: #e6a600;
 }
 
 
