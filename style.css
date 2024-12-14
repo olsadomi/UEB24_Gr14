@@ -1,20 +1,43 @@
-.footer{
-    margin-top: 150px;
-    width: 100%;
-    padding: 100px 15%;
-    background: #333;
-    color: #efefef;
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.footer {
+    background-color: F8F6F4;
+    padding: 27px 0 15px 0;
+}
+
+.logos {
     display: flex;
+    justify-content: center;
+
 }
 
-.footer div{
-    text-align: center;
+.social-logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.col-2{
-    flex-grow: 2;
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 103px;
 }
 
-.footer div h3{
-    /* hala nuk e di style */
+.copyright{
+    color: 8D8C8C;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+.links a{
+    color: 8D8C8C;
+}
+body{
+    margin: 0;
 }
