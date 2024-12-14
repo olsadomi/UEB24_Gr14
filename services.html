@@ -158,7 +158,25 @@
                 </tr>
             </tbody>
         </table>
+    </section>
 
+    <section id="wifi-section">
+        <h2>Interneti</h2>
+    <button class="wifi-button">Klikoni ketu per detajet shtese</button>
+    <div class="message-box">Kemi një befasi për ju! Ne ofrojmë FREE WI-FI në çdo hapësirë të aeroportit tonë!</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".wifi-button").click(function() {
+                $(".message-box").fadeOut(300, function() {
+                    $(this)
+                        .slideDown(500)
+                        .animate({ opacity: 1 }, 400);
+                });
+            });
+        });
+    </script>
     </section>
 </body>
 

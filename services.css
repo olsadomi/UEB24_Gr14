@@ -125,7 +125,6 @@ canvas {
 
 #what-we-offer-section h2 {
     font-size: 24px;
-    color: #0c356a;
     background: #0c356a;
     color: #fff0ce;
     padding: 10px 20px;
@@ -153,7 +152,6 @@ canvas {
 
 #where-to-buy-tickets-section h2 {
     font-size: 24px;
-    color: #0c356a;
     background: #0c356a;
     color: #fff0ce;
     padding: 10px 20px;
@@ -184,5 +182,62 @@ canvas {
 }
 
 
+#wifi-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    min-height: 300px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #fff0ce;
+    position: relative;
+}
+
+#wifi-section h2 {
+    font-size: 24px;
+    background: #0174be;
+    color: #fff0ce;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.wifi-button {
+    padding: 15px 30px;
+    background-color: #0c356a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wifi-button:hover {
+    background-color: #ffc436;
+    color: #0c356a;
+}
+
+.message-box {
+    margin-top: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #ffc436;
+    color: #0c356a;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+}
 
 
