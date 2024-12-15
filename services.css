@@ -599,3 +599,60 @@ button:hover {
     color: #fff0ce;
     font-weight: bold;
 }
+
+/*-----------------gallery---------------------------*/
+
+#photo-collage-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #fff0ce;
+    position: relative;
+}
+
+#photo-collage-section h2 {
+    font-size: 24px;
+    background: #0c356a;
+    color: #fff0ce;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 40px;
+    width: 100%; /* Ensure it uses the full parent width */
+    max-width: 800px; /* Adjust if needed */
+    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+}
+
+.gallery img {
+    flex: 1 1 calc(33.33% - 10px); /* Changed to 33.33% for 3 images per row */
+    max-width: calc(33.33% - 10px); /* Restrict max width to fit 3 images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+
