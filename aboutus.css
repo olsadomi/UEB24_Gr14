@@ -1,0 +1,29 @@
+
+
+body{
+    margin: 0;
+}
+
+.background-image{
+    width: 100vw;
+    img{
+        width: 100vw;
+    }
+}
+
+.titulli-aboutus{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.titulli-aboutus h3{
+    font-size: 100px;
+    color: white;
+}
+
+.pjesa1{
+    position: relative;
+}
