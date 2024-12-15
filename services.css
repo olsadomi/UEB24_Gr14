@@ -348,7 +348,7 @@ canvas {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 500px;
-    height: auto;
+    height: 90%;
     text-align: left;
     overflow-y: auto;
     position: relative;
@@ -359,7 +359,110 @@ canvas {
     top: 10px;
     right: 15px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 40px;
     color: red;
 }
 
+#tab-content #tab-details {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+#tab-content #tab-details p {
+    text-align: center;
+    background: #beb6b6;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#tab-content #tab-details form {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #0174be;
+    border-left: 2px solid #ffc436;
+    margin: 30px 0;
+    padding: 10px 5px;
+}
+#tab-content #tab-details .paraqitni {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0c356a;
+}
+
+#tab-content #tab-details label,input {
+    padding: 10px;
+}
+
+
+#tab-content #tab-details textarea {
+    margin: 10px 0;
+}
+
+#tab-content #tab-details button {
+    padding: 15px 30px;
+    background-color: #0c356a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#tab-content #tab-details button:hover{
+    background-color: #ffc436;
+    color: #0c356a;
+}
+
+/*----------------------transport-----------------------------*/
+
+#transport-section {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto;
+    min-height: 300px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #fff0ce;
+    position: relative;
+}
+
+#transport-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+}
+
+#transport-container .transport-circle {
+    background-color: #0174be;
+    border: none;
+    border-radius: 50%;
+    font-size: 35px;
+    margin: 0;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+#transport-container .transport-circle a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#transport-container .transport-circle span {
+    text-decoration: underline;
+    color: #ffc436;
+    font-size: 18px;
+}

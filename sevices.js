@@ -9,7 +9,7 @@ const details = [
     <address>Email: <a href="mailto:info@hertzalbania.com">info@hertzalbania.com</a></address>
     <address>Nr. tel: <a href="tel:+38344205877">+38344205877</a></address>
     <form>
-        <fieldset>Paraqitni kerkesen tuaj:</fieldset>
+        <label class="paraqitni">Paraqitni kerkesen tuaj:</label>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
         <textarea placeholder="Shkruani kerkesen ketu..."></textarea>
@@ -44,7 +44,6 @@ const details = [
 ];
 
 function showDetails(index) {
-    console.log(`Button clicked! Index: ${index}`);
     tabContent.innerHTML = details[index];
     tab.style.display = "flex";
 }
