@@ -1,0 +1,468 @@
+* {
+    font-family: sans-serif;
+}
+
+@keyframes in {
+    0% {background-color:none; color:#ffc436}
+    100% {background-color:white; color:#0c356a;}
+}
+@keyframes out {
+    0% {background-color:white; color: #0c356a;}
+    100% {background-color:none; color: #ffc436;}
+}
+
+ .container{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+    width: inherit;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 0px 120px ;
+    background-color: transparent;
+    color: #ffc436;
+    animation-name: out;
+    animation-duration: 0.5s;
+    position: fixed;
+}
+
+.container.scroll{
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.container:hover{
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.image{
+    width: 22%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#logo1{
+    width: 50px ;
+    max-height:55px;
+}
+
+#logo-text{
+    font-size: 25px;
+}
+
+.links{
+    width: 55%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a{
+    color: inherit;
+    font-size:20px ;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/*------------------------------------SERVICES*/
+
+#services-header {
+    background: url(services-bg-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#services-header h1 {
+    font-weight: 600;
+    color: #fff0ce;
+    margin-top: 140px;
+    font-size: 48px;
+}
+
+#what-we-offer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #fff0ce;
+    position: relative;
+}
+
+canvas {
+    width: 100%;
+    height: 100%; 
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#what-we-offer-section h2 {
+    font-size: 24px;
+    background: #0c356a;
+    color: #fff0ce;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/*--------------------------where to buy tickets---------------------*/
+#where-to-buy-tickets-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #fff0ce;
+    position: relative;
+}
+
+#where-to-buy-tickets-section h2 {
+    font-size: 24px;
+    background: #0c356a;
+    color: #fff0ce;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#where-to-buy-tickets-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#where-to-buy-tickets-section table th {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+#where-to-buy-tickets-section table td {
+    border: 2px dashed #0174be;
+    padding: 8px;
+    text-align: center;
+}
+
+#where-to-buy-tickets-section th {
+    background-color: #ffc436;
+    color: #0c356a;
+}
+
+/*----------------------------------wifi---------------------------*/
+
+#wifi-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    min-height: 350px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    border: 20px solid #ffc436;
+    position: relative;
+}
+
+#wifi-section h2 {
+    font-size: 24px;
+    background: #0174be;
+    color: #fff0ce;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.wifi-button {
+    padding: 15px 30px;
+    background-color: #0c356a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wifi-button:hover {
+    background-color: #ffc436;
+    color: #0c356a;
+}
+
+.message-box {
+    margin-top: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #ffc436;
+    color: #0c356a;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+}
+
+/*----------------------car rentals--------------------------------*/
+
+#car-rentals-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #fff0ce;
+    position: relative;
+}
+
+#car-rentals-section h2 {
+    font-size: 24px;
+    background: #0c356a;
+    color: #fff0ce;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#car-rental-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.car-rental-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.car-rental-brand img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.car-rental-brand h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0c356a;
+}
+
+.car-rental-brand p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0px;
+}
+
+.car-rental-brand button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffc436;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.car-rental-brand button:hover {
+    background-color: #e6a600;
+}
+
+
+
+#tab {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+    justify-content: center;
+}
+
+#tab-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 90%;
+    text-align: left;
+    overflow-y: auto;
+    position: relative;
+}
+
+#close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 40px;
+    color: red;
+}
+
+#tab-content #tab-details {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+#tab-content #tab-details p {
+    text-align: center;
+    background: #beb6b6;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#tab-content #tab-details form {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #0174be;
+    border-left: 2px solid #ffc436;
+    margin: 30px 0;
+    padding: 10px 5px;
+}
+#tab-content #tab-details .paraqitni {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0c356a;
+}
+
+#tab-content #tab-details label,input {
+    padding: 10px;
+}
+
+
+#tab-content #tab-details textarea {
+    margin: 10px 0;
+}
+
+#tab-content #tab-details button {
+    padding: 15px 30px;
+    background-color: #0c356a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#tab-content #tab-details button:hover{
+    background-color: #ffc436;
+    color: #0c356a;
+}
+
+/*----------------------transport-----------------------------*/
+
+#transport-section {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px auto;
+    min-height: 300px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #fff0ce;
+    position: relative;
+}
+
+#transport-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+}
+
+#transport-container .transport-circle {
+    background-color: #0174be;
+    border: none;
+    border-radius: 50%;
+    font-size: 35px;
+    margin: 0;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+#transport-container .transport-circle a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#transport-container .transport-circle span {
+    text-decoration: underline;
+    color: #ffc436;
+    font-size: 18px;
+}
