@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div id="nav-placeholder"></div>
     <!--Krijimi i nje section-->
     <section class="news-home">
         <div class="news-text">
@@ -22,7 +23,6 @@
         <span class="filter-item" data-filter="destinacionet">Destinacionet</span>
         <span class="filter-item" data-filter="evente">Evente</span>
         <span class="filter-item" data-filter="risi">Risi</span>
-        <span class="filter-item" data-filter="shikuarat">Me te shikuarat</span>
     </div>
 
     <!--Postimet-->
@@ -31,7 +31,7 @@
         <div class="post-box risi">
             <img src="fotot/foto1.jpg" alt="" class="post-img">
             <h2 class="kategoria">Risi</h2>
-            <a href="#" class="post-titulli">Aeroporti i Prishtinës Përgatitet për Sezonin Dimëror me Investime në Infrastrukturë</a>
+            <a href="post1-details.html" class="post-titulli">Aeroporti i Prishtinës Përgatitet për Sezonin Dimëror me Investime në Infrastrukturë</a>
             <span class="post-date">7 Dec 2024</span>
             <p class="post-pershkrimi">
                 Në prag të sezonit dimëror, Aeroporti Ndërkombëtar i Prishtinës ka nisur një sërë përmirësimesh
@@ -46,7 +46,7 @@
         <div class="post-box destinacionet">
             <img src="fotot/foto2.jpg" alt="" class="post-img">
             <h2 class="kategoria">Destinacionet</h2>
-            <a href="#" class="post-titulli">Destinacione të Reja për 2024: Aeroporti Shton Linjat Ndërkombëtare</a>
+            <a href="#" class="post-titulli">Destinacione të Reja për 2024: Aeroporti Shton Disa Linjat Ndërkombëtare</a>
             <span class="post-date">12 Nov 2022</span>
             <p class="post-pershkrimi">
                 Nga fillimi i vitit 2024, Aeroporti i Prishtinës do të ofrojë fluturime për destinacione 
@@ -103,7 +103,7 @@
 
         <!--Posti 5-->
         <div class="post-box risi">
-            <img src="fotot/foto5.jpg" alt="" class="post-img">
+            <img src="fotot/foto5.webp" alt="" class="post-img">
             <h2 class="kategoria">Risi</h2>
             <a href="#" class="post-titulli">Shërbimi i Self Check-in tani edhe në Aeroportin Ndërkombëtar të Prishtinës "Adem Jashari"</a>
             <span class="post-date">19 Dec 2024</span>
@@ -169,8 +169,14 @@
         </div>
     </section>
     
-
+    <!--Lidhja me me JS dhe me navbarin-->
     <script src="news.js"></script>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+            $("#footer-placeholder").load("footer.html");
+        })
+    </script>
 </body>
 
 </html>
