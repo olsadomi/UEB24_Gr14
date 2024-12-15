@@ -19,10 +19,6 @@ p{
     font-size: 18px;
 }
 
-body{
-    background-color: blue;
-}
-
 header{
     min-height:52vw;
     background-image: url("Photos/cover.jpg");
