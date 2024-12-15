@@ -17,14 +17,16 @@ a{
     background-repeat: no-repeat;
     padding: 0 120px;
     padding-top: 8vw;
+  
 }
 
 .post-container {
-    max-width: 100%;
+    width: 100%;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 15px;
     overflow: hidden;
+    box-shadow: gray 0 0 5px 5px;
 }
 .post1-image {
     background: url(fotot/foto1.jpg);
@@ -111,6 +113,9 @@ p {
     background: #fff;
     margin: 20px auto;
     width:100%;
+    box-sizing: border-box;
+    box-shadow: gray 0 0 5px 5px;
+    border-radius: 15px;
 }
 
 .other-posts h3 {
