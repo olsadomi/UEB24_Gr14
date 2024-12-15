@@ -251,7 +251,38 @@
             </tbody>
         </table>
 
+        <div class="calculator">
+            <h3>Kalkulatori per pagesen e parkingut</h3>
+
+            <div class="input-group">
+                <label for="entryDate">Data e hyrjes: </label>
+                <input type="date" id="entryDate">
+                <label for="entryHour">Ora: </label>
+                <input type="number" id="entryHour" min="0" max="23" value="10">
+                <label for="entryMin">Min: </label>
+                <input type="number" id="entryMin" min="0" max="59" value="00">
+            </div>
+
+            <div class="input-group">
+                <label for="exitDate">Data e daljes: </label>
+                <input type="date" id="exitDate">
+                <label for="exitHour">Ora: </label>
+                <input type="number" id="exitHour" min="0" max="23" value="10">
+                <label for="exitMin">Min: </label>
+                <input type="number" id="exitMin" min="0" max="59" value="00">
+            </div>
+
+            <div class="button-container">
+                <button onclick="calculateFee()">Kalkulo</button>
+            </div>
+            
+            <div class="result" id="result"></div>
+        </div>
     </section>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
