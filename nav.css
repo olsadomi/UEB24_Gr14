@@ -38,7 +38,7 @@ body{
     min-height: 75px;
     box-sizing: border-box;
     background-color: none;
-    padding: 0px 120px ;
+    padding: 0px 8vw ;
     color: var(--yellow);
     animation-name: out;
     animation-duration: 0.5s;
