@@ -1,0 +1,250 @@
+html{
+   background-color: white  ;
+}
+
+
+#flights-header{
+    background: url("Photos/background-flights.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.header{
+    
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30px;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1440px;
+}
+
+
+
+#title1{   
+
+    text-align: left;
+    padding-top: 50px;
+    color:#FBCB0A; 
+    font-size: 70px; 
+    font-weight: bolder; 
+    position: relative;
+}
+
+#title2{
+    text-align: center;
+    font-size:50px; 
+    font-weight: bolder;
+    position: relative;
+    color:#F9F7F7; 
+    line-height: 10px;
+}
+
+#title3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:#F9F7F7;
+}
+
+#tekst{
+    text-align: left;
+    font-weight: bold;
+    color: #FBCB0A;
+    font-size: 20px;
+}
+.row{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 20px;
+    background-color:#0174BE ;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#rowArrivals{
+    font-size: 25px;
+    font-weight: bolder; 
+    color:#F9F7F7; 
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:space-around;
+    background-color: #ffe9b4;
+     
+}
+
+ 
+
+
+#srchArr{
+   background-color: gray;
+}
+
+#box2{
+    padding: 20px;
+    border-bottom: none;
+    margin-bottom: 0px;
+    
+}
+
+ 
+
+#selectdate{
+     background-color: gray;
+}
+
+.flights-arritjet-container{
+    background-color:#ffe9b4 ;
+    padding: 0 0 64px;
+    box-sizing: border-box;
+    min-height: 400px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.flights-arritjet-container ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+#flights-container1{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.constraint{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*The code below does something but i cant figure out what is changed between them*/
+
+/* .flights-arritjet-container ul li ul {
+    border-bottom: 1px solid #fade9e ;
+    display: grid;
+    grid-auto-columns: minmax(0, .4fr) minmax(0, .5fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, .6fr) minmax(0, .5fr) minmax(48px, 48px);
+    grid-auto-flow: column;
+    padding: 0;
+} */
+
+.flights-arritjet-container ul li ul {
+    border-bottom: 2px solid #FFC436;
+    display: grid;
+    grid-template-columns: 0.4fr 0.5fr 1fr 1fr 0.6fr 0.5fr 48px;
+    gap: 10px; 
+    padding: 0;
+    list-style: none;  
+}
+
+ 
+
+
+.flights-arritjet-container ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*The code below doesnt change anything, can delete but might wanna try to figure out what it does*/
+
+
+/* .flights-arritjet-container ul li:first-child ul li:last-child {
+    padding: 24px 8px;
+  }
+  */
+
+/* .flights-arritjet-container ul li:not(:first-child) ul li:first-child {
+    z-index: 2;
+  } */
+
+/* .flights-arritjet-container ul li:not(:first-child) ul li {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+  } */
+
+.flights-arritjet-container ul li ul li {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+    color:#0174be;
+    padding: 24px 24px;
+    
+
+    border-bottom: none;
+    background-color: transparent;
+    
+}
+
+.flights-arritjet-container ul li ul li .link {
+    height: 22px;
+    display: block;
+    font-weight: bold;
+}
+
+.link{
+    cursor: pointer;
+    position: relative;
+
+}
+
+span{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.flights-arritjet-container ul li ul li .link svg {
+    width: 26px;
+    height: 26px;
+    opacity: 1;
+    right: 0;
+    top: 0;
+ 
+  }
+
+  .link svg{
+    position: absolute;
+    transition: all 150ms ease-in-out;
+  }
+
+a{
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+     
+}
+
+.flights-nisjet{
+    margin: 20px;
+}
