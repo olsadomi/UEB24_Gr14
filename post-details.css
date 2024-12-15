@@ -11,16 +11,16 @@ a{
     text-decoration: none;
 }
 
-body {
+#all{
     background-color: #f4f4f4;
     background: url(Photos/bg-cover2.jpg);
     background-repeat: no-repeat;
-    margin-top: 100px;
+    padding: 0 120px;
+    padding-top: 8vw;
 }
 
 .post-container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 100%;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -110,7 +110,7 @@ p {
     padding: 20px;
     background: #fff;
     margin: 20px auto;
-    max-width: 1200px;
+    width:100%;
 }
 
 .other-posts h3 {
