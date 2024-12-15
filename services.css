@@ -654,14 +654,32 @@ button:hover {
     transform: scale(1.05);
 }
 
-.rating-section {
+/*----------------------rating------------------------------*/
+
+#star-rating-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    gap: 40px;
+    margin: 0 auto;
+    min-height: 200px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px;
+    box-sizing: border-box;
     background-color: #fff0ce;
+    position: relative;
+}
+
+#star-rating-section h2 {
+    font-size: 24px;
+    background: #0c356a;
+    color: #fff0ce;
+    padding: 10px 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .star-rating {
@@ -671,19 +689,20 @@ button:hover {
 }
 
 .star {
-    font-size: 30px;
-    color: #ccc; /* Default color for unselected stars */
+    font-size: 100px;
+    color: #ccc;
     cursor: pointer;
     transition: color 0.2s ease;
 }
 
 .star.selected {
-    color: gold; /* Gold color for selected stars */
+    color: gold; 
 }
 
 p {
-    font-size: 16px;
+    font-size: 25px;
     margin-top: 10px;
+    font-weight: 600;
 }
 
 
