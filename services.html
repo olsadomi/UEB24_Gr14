@@ -196,10 +196,204 @@
 
     <section id="transport-section">
         <div id="transport-container">
-            <div class="transport-circle"><a href="taxi.pdf" download="taxi.pdf" target="_blank">TAKSI<br> <span>Lexo me shume</span></a></div>
-            <div class="transport-circle"><a href="bus.pdf" download="bus.pdf" target="_blank">AUTOBUS <br><span>Lexo me shume</span></a></div>
+            <div class="transport-circle"><a href="taxi.pdf" download="taxi.pdf" target="_blank">TAKSI<br> <span>Lexo me
+                        shume</span></a></div>
+            <div class="transport-circle"><a href="bus.pdf" download="bus.pdf" target="_blank">AUTOBUS <br><span>Lexo me
+                        shume</span></a></div>
         </div>
     </section>
+
+    <section id="parking-spots-section">
+        <h2>Hapesirat per parking</h2>
+        <p class="counter">0</p>
+
+        <table>
+            <thead>
+                <th>Koha</th>
+                <th>Pagesa</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15 minuta</td>
+                    <td>FREE</td>
+                </tr>
+                <tr>
+                    <td>Deri ne 2 ore</td>
+                    <td>2&#8364;</td>
+                </tr>
+                <tr>
+                    <td>2-6 ore</td>
+                    <td>4&#8364;</td>
+                </tr>
+                <tr>
+                    <td>6-12 ore</td>
+                    <td>6&#8364;</td>
+                </tr>
+                <tr>
+                    <td>24 ore</td>
+                    <td>8&#8364;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="calculator">
+            <h3>Kalkulatori per pagesen e parkingut</h3>
+
+            <div class="input-group">
+                <label for="entryDate">Data e hyrjes: </label>
+                <input type="date" id="entryDate">
+                <label for="entryHour">Ora: </label>
+                <input type="number" id="entryHour" min="0" max="23" value="10">
+                <label for="entryMin">Min: </label>
+                <input type="number" id="entryMin" min="0" max="59" value="00">
+            </div>
+
+            <div class="input-group">
+                <label for="exitDate">Data e daljes: </label>
+                <input type="date" id="exitDate">
+                <label for="exitHour">Ora: </label>
+                <input type="number" id="exitHour" min="0" max="23" value="10">
+                <label for="exitMin">Min: </label>
+                <input type="number" id="exitMin" min="0" max="59" value="00">
+            </div>
+
+            <div class="button-container">
+                <button onclick="calculateFee()">Kalkulo</button>
+            </div>
+
+            <div class="result" id="result"></div>
+        </div>
+    </section>
+
+    <section id="photo-collage-section">
+        <h2>Dyqanet</h2>
+        <div class="gallery shops">
+            <img src="shop1.jpg" alt="Shop 1">
+            <img src="shop2.jpeg" alt="Shop 2">
+            <img src="shop3.webp" alt="Shop 3">
+            <img src="shop4.jpg" alt="Shop 4">
+            <img src="shop5.jpg" alt="Shop 5">
+            <img src="shop6.jpg" alt="Shop 6">
+            <img src="shop7.webp" alt="Shop 7">
+            <img src="shop8.jpg" alt="Shop 8">
+            <img src="shop9.jpg" alt="Shop 9">
+        </div>
+
+        <h2>Restaurantet</h2>
+        <div class="gallery restaurants">
+            <img src="restaurant1.webp" alt="Restaurant 1">
+            <img src="restaurant2.jpg" alt="Restaurant 2">
+            <img src="restaurant3.jpg" alt="Restaurant 3">
+            <img src="restaurant4.jpg" alt="Restaurant 4">
+            <img src="restaurant5.jpg" alt="Restaurant 5">
+            <img src="restaurant6.jpg" alt="Restaurant 6">
+            <img src="restaurant7.jpg" alt="Restaurant 7">
+            <img src="restaurant8.jpg" alt="Restaurant 8">
+            <img src="restaurant9.jpg" alt="Restaurant 9">
+        </div>
+    </section>
+
+    <section id="star-rating-section">
+        <h2>Rate this place:</h2>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <p>Vleresimi juaj: <span id="rating-value">0</span> yje</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var stars = $(".star");
+            var ratingValue = $("#rating-value");
+
+            stars.on("mouseover", function () {
+                var value = $(this).data("value");
+
+                stars.each(function () {
+                    if ($(this).data("value") <= value) {
+                        $(this).css("color", "gold");
+                    } else {
+                        $(this).css("color", "#ccc");
+                    }
+                });
+            });
+
+            stars.on("mouseout", function () {
+                stars.each(function () {
+                    if (!$(this).hasClass("selected")) {
+                        $(this).css("color", "#ccc");
+                    }
+                });
+            });
+
+            stars.on("click", function () {
+                var value = $(this).data("value");
+                ratingValue.text(value);
+
+                stars.each(function () {
+                    if ($(this).data("value") <= value) {
+                        $(this).addClass("selected"); 
+                    } else {
+                        $(this).removeClass("selected"); 
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let hasAnimated = false;
+
+            $(window).on("scroll", function () {
+                let sectionOffset = $("#parking-spots-section").offset().top;
+                let scrollPosition = $(window).scrollTop();
+                let windowHeight = $(window).height();
+
+                if (scrollPosition + windowHeight > sectionOffset && !hasAnimated) {
+                    hasAnimated = true;
+                    animateCounter(0, 950, 4000);
+                }
+            });
+
+            function animateCounter(start, end, duration) {
+                let $counter = $(".counter");
+                let range = end - start;
+                let startTime = Date.now();
+
+                function updateCounter() {
+                    let elapsed = Date.now() - startTime;
+                    let progress = elapsed / duration;
+
+                    let easedProgress = easeInOut(progress);
+                    let currentValue = Math.floor(start + range * easedProgress);
+
+                    $counter.text(currentValue);
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        $counter.text(end);
+                    }
+                }
+
+                function easeInOut(t) {
+                    return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+                }
+
+                updateCounter();
+            }
+        });
+    </script>
+
+
     <script src="sevices.js"></script>
 </body>
 
