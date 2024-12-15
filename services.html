@@ -275,7 +275,7 @@
             <div class="button-container">
                 <button onclick="calculateFee()">Kalkulo</button>
             </div>
-            
+
             <div class="result" id="result"></div>
         </div>
     </section>
@@ -293,7 +293,7 @@
             <img src="shop8.jpg" alt="Shop 8">
             <img src="shop9.jpg" alt="Shop 9">
         </div>
-    
+
         <h2>Restaurantet</h2>
         <div class="gallery restaurants">
             <img src="restaurant1.webp" alt="Restaurant 1">
@@ -308,8 +308,58 @@
         </div>
     </section>
 
+    <section id="star-rating-section">
+        <h2>Rate this place:</h2>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <p>Your Rating: <span id="rating-value">0</span> stars</p>
+    </section>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var stars = $(".star");
+            var ratingValue = $("#rating-value");
 
+            stars.on("mouseover", function () {
+                var value = $(this).data("value");
+
+                stars.each(function () {
+                    if ($(this).data("value") <= value) {
+                        $(this).css("color", "gold");
+                    } else {
+                        $(this).css("color", "#ccc");
+                    }
+                });
+            });
+
+            stars.on("mouseout", function () {
+                stars.each(function () {
+                    if (!$(this).hasClass("selected")) {
+                        $(this).css("color", "#ccc");
+                    }
+                });
+            });
+
+            stars.on("click", function () {
+                var value = $(this).data("value");
+                ratingValue.text(value);
+
+                stars.each(function () {
+                    if ($(this).data("value") <= value) {
+                        $(this).addClass("selected"); 
+                    } else {
+                        $(this).removeClass("selected"); 
+                    }
+                });
+            });
+        });
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

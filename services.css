@@ -634,15 +634,15 @@ button:hover {
     justify-content: space-between;
     gap: 15px;
     margin-bottom: 40px;
-    width: 100%; /* Ensure it uses the full parent width */
-    max-width: 800px; /* Adjust if needed */
-    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+    width: 100%; 
+    max-width: 800px; 
+    box-sizing: border-box; 
 }
 
 .gallery img {
-    flex: 1 1 calc(33.33% - 10px); /* Changed to 33.33% for 3 images per row */
-    max-width: calc(33.33% - 10px); /* Restrict max width to fit 3 images */
-    height: auto; /* Maintain aspect ratio */
+    flex: 1 1 calc(33.33% - 10px); 
+    max-width: calc(33.33% - 10px); 
+    height: auto; 
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -652,6 +652,38 @@ button:hover {
 
 .gallery img:hover {
     transform: scale(1.05);
+}
+
+.rating-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff0ce;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.star {
+    font-size: 30px;
+    color: #ccc; /* Default color for unselected stars */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.star.selected {
+    color: gold; /* Gold color for selected stars */
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 
