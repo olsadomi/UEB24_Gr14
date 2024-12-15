@@ -7,6 +7,10 @@
     padding: 0px;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     background-color: #f4f4f4;
     background: url(Photos/bg-cover2.jpg);
@@ -81,20 +85,6 @@ p {
     gap: 10px;
 }
 
-.kategoria-post a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #007bff;
-    border: 1px solid #ddd;
-    padding: 5px 10px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.kategoria-post a:hover {
-    background-color: #007bff;
-    color: #fff;
-}
 
 .other-posts {
     padding: 20px;
