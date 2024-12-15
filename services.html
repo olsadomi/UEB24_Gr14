@@ -211,10 +211,65 @@
 
     <section id="transport-section">
         <div id="transport-container">
-            <div class="transport-circle"><a href="taxi.pdf" download="taxi.pdf" target="_blank">TAKSI<br> <span>Lexo me shume</span></a></div>
-            <div class="transport-circle"><a href="bus.pdf" download="bus.pdf" target="_blank">AUTOBUS <br><span>Lexo me shume</span></a></div>
+            <div class="transport-circle"><a href="taxi.pdf" download="taxi.pdf" target="_blank">TAKSI<br> <span>Lexo me
+                        shume</span></a></div>
+            <div class="transport-circle"><a href="bus.pdf" download="bus.pdf" target="_blank">AUTOBUS <br><span>Lexo me
+                        shume</span></a></div>
         </div>
     </section>
+
+    <section id="parking-spots-section">
+        <h2>Hapesirat per parking</h2>
+        <p class="counter">0</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let hasAnimated = false; 
+
+            $(window).on("scroll", function () {
+                let sectionOffset = $("#parking-spots-section").offset().top;
+                let scrollPosition = $(window).scrollTop();
+                let windowHeight = $(window).height();
+
+                if (scrollPosition + windowHeight > sectionOffset && !hasAnimated) {
+                    hasAnimated = true; 
+                    animateCounter(0, 950, 4000); 
+                }
+            });
+
+            function animateCounter(start, end, duration) {
+                let $counter = $(".counter");
+                let range = end - start;
+                let startTime = Date.now();
+
+                function updateCounter() {
+                    let elapsed = Date.now() - startTime;
+                    let progress = elapsed / duration;
+
+                    let easedProgress = easeInOut(progress);
+                    let currentValue = Math.floor(start + range * easedProgress);
+
+                    $counter.text(currentValue);
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        $counter.text(end); 
+                    }
+                }
+
+                function easeInOut(t) {
+                    return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+                }
+
+                updateCounter();
+            }
+        });
+    </script>
+
+
     <script src="sevices.js"></script>
 </body>
 
