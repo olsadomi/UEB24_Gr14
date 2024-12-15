@@ -221,12 +221,42 @@
     <section id="parking-spots-section">
         <h2>Hapesirat per parking</h2>
         <p class="counter">0</p>
+
+        <table>
+            <thead>
+                <th>Koha</th>
+                <th>Pagesa</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15 minuta</td>
+                    <td>FREE</td>
+                </tr>
+                <tr>
+                    <td>Deri ne 2 ore</td>
+                    <td>2&#8364;</td>
+                </tr>
+                <tr>
+                    <td>2-6 ore</td>
+                    <td>4&#8364;</td>
+                </tr>
+                <tr>
+                    <td>6-12 ore</td>
+                    <td>6&#8364;</td>
+                </tr>
+                <tr>
+                    <td>24 ore</td>
+                    <td>8&#8364;</td>
+                </tr>
+            </tbody>
+        </table>
+
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function () {
-            let hasAnimated = false; 
+            let hasAnimated = false;
 
             $(window).on("scroll", function () {
                 let sectionOffset = $("#parking-spots-section").offset().top;
@@ -234,8 +264,8 @@
                 let windowHeight = $(window).height();
 
                 if (scrollPosition + windowHeight > sectionOffset && !hasAnimated) {
-                    hasAnimated = true; 
-                    animateCounter(0, 950, 4000); 
+                    hasAnimated = true;
+                    animateCounter(0, 950, 4000);
                 }
             });
 
@@ -256,7 +286,7 @@
                     if (progress < 1) {
                         requestAnimationFrame(updateCounter);
                     } else {
-                        $counter.text(end); 
+                        $counter.text(end);
                     }
                 }
 

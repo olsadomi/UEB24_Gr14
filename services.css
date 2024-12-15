@@ -503,4 +503,28 @@ canvas {
     font-size: 100px;
     border-radius: 40%;
     margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#parking-spots-section table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 40px 0 20px 0;
+}
+
+#parking-spots-section table th {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+#parking-spots-section table td {
+    border: 2px dashed #0174be;
+    padding: 8px;
+    text-align: center;
+}
+
+#parking-spots-section th {
+    background-color: #ffc436;
+    color: #0c356a;
 }
