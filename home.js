@@ -24,4 +24,8 @@ btnCity.addEventListener("click", function(){
     btnAirport.classList.remove("active")
 })
 
+function getCurrentDate(){
+    return Date.getcurrentDate;
+}
+
 
