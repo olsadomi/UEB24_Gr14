@@ -1,3 +1,9 @@
+$(function(){
+    $("#navbar-placeholder").load("nav.html");
+    $("#footer-placeholder").load("footer.html");
+});
+
+
 const tab = document.getElementById('tab');
 const tabContent = document.querySelector('#tab-content #tab-details');
 const closeButton = document.querySelector('#close-button');

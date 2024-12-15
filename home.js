@@ -1,5 +1,5 @@
 $(function(){
-    $("#nav-bar-placeholder").load("nav.html");
+    $("#navbar-placeholder").load("nav.html");
     $("#footer-placeholder").load("footer.html");
 });
 
@@ -23,5 +23,9 @@ btnCity.addEventListener("click", function(){
     btnCity.classList.add("active")
     btnAirport.classList.remove("active")
 })
+
+function getCurrentDate(){
+    return Date.getcurrentDate;
+}
 
 

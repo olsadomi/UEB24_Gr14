@@ -19,30 +19,25 @@ p{
     font-size: 18px;
 }
 
-body{
-    background-color: blue;
-}
-
 header{
-    min-height:800px;
+    min-height:52vw;
     background-image: url("Photos/cover.jpg");
     background-repeat: no-repeat;
     background-position:center center;
     background-size:cover;
     box-sizing: border-box;
-    padding: 0 120px;
+    padding: 0 8vw;
     z-index: 1;
     box-shadow: gray 0px 0px 8px 3px;
     position: relative;
-  
-
+    margin-bottom: 14vw;
 }
 
 .title-text{
     width: 80%;
     height: fit-content;
     position: relative;
-    top: 170px;
+    top: 12vw;
     color: white;
 }
 
@@ -64,14 +59,13 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 85%;
+    width: 100%;
     height: auto;
     box-sizing: border-box;
-    position: absolute;
-    bottom: -23%; 
+    position: relative;
+    top: 26vw;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
 .flashcard{
@@ -86,6 +80,7 @@ header{
     padding: 15px 20px;
     box-shadow: lightgray 0px 0px 8px 3px;
     transition: all 0.3s ease; 
+    margin-bottom: 10vw;
 }
 .flashcard:hover{
     transform: translateY(-15px);
@@ -94,7 +89,7 @@ header{
 .flashcard img{
     width:55%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
 }
 
 .flashcard h2{
@@ -109,15 +104,23 @@ header{
     font-size: 1.3vw;
 }
 
+.section-title{
+    font-size: 2.6vw;
+    color: var(--lightblue);
+    text-decoration: underline var(--yellow) 4px;
+    margin: 4vw 0 2vw 0;
+}
+
 /* ----------- EXPERIENCES -------- */
 .bg-container{
-    background-image: url("Photos/bg-cover2.jpg");
-    background-repeat:no-repeat;
-    background-position:  -10% 40%;
-    background-size:100vh 95vw;
+    background-image: url("Photos/bg-cover4.jpg"), url("Photos/bg-cover5.jpg");
+    background-repeat:no-repeat, no-repeat;
+    background-position:  -10% 40%, bottom right;
+    background-size:100vh 95vw, 60vh 55vw;
+    background-origin: border-box;
     filter: blur();
     width: 100%;
-    height: 2000px;
+    height: 2300px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -128,19 +131,9 @@ header{
     box-sizing: border-box;
     width: 87%;
     height: auto;
-    position: absolute;
-    top: 12%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#experience .section-title{
-    font-size: 2.6vw;
-    color: var(--lightblue);
-    text-decoration: underline var(--yellow) 4px;
-    margin-bottom: 40px;
-    margin-top: 40px;
 }
 
 #experience .experience-filter{
@@ -149,7 +142,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 55%;
-    height: 60px;
+    height: 4vw;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -170,6 +163,9 @@ header{
 #experience .experience-filter p{
     font-size: 1.3vw;
 }
+#experience .experience-filter i{
+    font-size: 1.8vw;
+}
 
 .exp-photo-container{
     width: 100%;
@@ -185,7 +181,7 @@ header{
 .exp-photo{
     width: 15vw;
     border-radius: 5%;
-    height: 40vh;
+    height: 20vw;
     position: relative;
     box-shadow: gray 0 0 6px 5px;
     transition: transform 0.5s ease-in-out;
@@ -201,6 +197,7 @@ header{
 .exp-photo:hover{
     transform: translateY(-15px);
     transform: scale(1.05);
+    box-shadow: var(--lightblue) 0 0 25px 5px;  
 }
 
 
@@ -266,6 +263,131 @@ header{
     color: white;   
 }
   
+/* ----------------------PARTNERS----------------------- */
 
+#partners{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
 
+}
 
+.partners-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto) ;
+    gap: 30px;
+}
+
+@keyframes fadeTextIn {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+@keyframes fadeTextout{
+    0% {
+        opacity: 1;
+        display: block;
+    }
+    100% {
+        opacity:0 ;
+        display: none;
+    }
+}
+
+.partners-child{
+    width: 17vw;
+    border-radius: 5%;
+    height: 20vw;
+    position: relative;
+    box-shadow: gray 0 0 6px 5px;
+    transition: transform 0.5s ease-in-out;
+    background-position: -15px ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    animation: fadeTextout 0.5s;   
+    background-color: white;
+}
+.partners-child p{
+    position: absolute;
+    color: white;
+    font-size: 2.2vw;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    animation: fadeTextout 0.3s ;
+    display: none;
+}
+
+.partners-child .blueshade{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: #0c356ad4;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    animation: fadeTextout 0.5s ;
+    display: none;
+}
+
+.partners-child:hover {
+    box-shadow: var(--lightblue) 0 0 25px 5px;
+}
+.partners-child:hover .blueshade{
+    display: block;
+    animation: fadeTextIn 0.5s ;
+}
+.partners-child:hover p{
+    display: block;
+    animation: fadeTextIn 0.7s ;
+}
+
+.partners-child img{
+    width: 80%;
+    border-radius: 5%;
+}
+
+/* ---------PARKING CALCULATOR---------------- */
+
+#parkingCalc{
+    width: 80%;
+    height: auto;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#parkingCalc .container{
+    width: 90%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parking-prices table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.parking-prices table th, .parking-prices table td{
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+.parking-prices table th{
+    background-color: white;
+}

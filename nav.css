@@ -27,7 +27,7 @@ body{
     0% {background-color:white; color: var(--blue); box-shadow : 0px 0px 5px 3px gray;}
     100% {background-color:none; box-shadow : none; color: var(--yellow); }
 }
-#nav-bar-placeholder{
+
 .container{
     display:flex;
     flex-direction: row;
@@ -38,7 +38,7 @@ body{
     min-height: 75px;
     box-sizing: border-box;
     background-color: none;
-    padding: 0px 120px ;
+    padding: 0px 8vw ;
     color: var(--yellow);
     animation-name: out;
     animation-duration: 0.5s;
@@ -94,6 +94,4 @@ body{
     font-size:1.2vw ;
     font-weight: 500;
     text-decoration: none;
-
-}
 }
