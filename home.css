@@ -460,12 +460,20 @@ table td{
 .parking-calculator p{
     font-weight: bold;
     font-size: 1.8vw;
-    color: var(--yellow);
     display: none;
     transition: all 0.3s ease-out;
 }
 .parking-calculator p.showQmimi{
-    animation: fadeTextIn 0.5s;
+    display: block;
+    color: var(--yellow);
+    animation: fadeTextIn 0.3s;
+    transform: translateY(15px);
+}
+
+.parking-calculator p.wrong{
+    display: block;
+    color: red;
+    animation: fadeTextIn 0.3s;
     transform: translateY(15px);
 }
 #btn-parking{
@@ -483,6 +491,14 @@ table td{
     transform: scale(1.05);
     background-color: var(--blue);
     color: white;
+}
+
+.parking-input{
+    transition: all 0.3s ease-in-out;
+}
+.parking-input.fieldNull{
+
+    box-shadow: red 0 0 7px 2px;
 }
 
 
