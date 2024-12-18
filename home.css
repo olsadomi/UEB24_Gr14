@@ -308,7 +308,7 @@ header{
     border-radius: 5%;
     height: 20vw;
     position: relative;
-    box-shadow: gray 0 0 6px 5px;
+    box-shadow: lightgray 0 0 6px 5px;
     transition: transform 0.5s ease-in-out;
     background-position: -15px ;
     background-repeat: no-repeat;
@@ -364,7 +364,6 @@ header{
 #parkingCalc{
     width: 80%;
     height: auto;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -380,7 +379,7 @@ header{
     align-items: center;
     border-radius: 15px;
     padding: 10px 30px;
-    box-shadow: gray 0 0 6px 5px;
+    box-shadow: lightgray 0 0 6px 5px;
     transition: all ease-in-out 0.3s;
 }
 #parkingCalc .parking-container:hover{
@@ -460,12 +459,20 @@ table td{
 .parking-calculator p{
     font-weight: bold;
     font-size: 1.8vw;
-    color: var(--yellow);
     display: none;
     transition: all 0.3s ease-out;
 }
 .parking-calculator p.showQmimi{
-    animation: fadeTextIn 0.5s;
+    display: block;
+    color: var(--yellow);
+    animation: fadeTextIn 0.3s;
+    transform: translateY(15px);
+}
+
+.parking-calculator p.wrong{
+    display: block;
+    color: red;
+    animation: fadeTextIn 0.3s;
     transform: translateY(15px);
 }
 #btn-parking{
@@ -485,4 +492,60 @@ table td{
     color: white;
 }
 
+.parking-input{
+    transition: all 0.3s ease-in-out;
+}
+.parking-input.fieldNull{
+
+    box-shadow: red 0 0 7px 2px;
+}
+
+
+/* --------------------VIDEO----------------------- */
+
+#orientationVideo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    padding-top: 3vw;
+}
+
+
+#orientationVideo .orient-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+}
+
+#orientationVideo .orient-photo {
+    background-image: url("Photos/Limak\ Visit\ Kosovo_WEB.jpg");
+    background-position: -2.5vw center;
+    background-repeat: no-repeat;
+    background-size: 50vw 35vw;
+    width: 60%; 
+    height: 30vw; 
+    clip-path: polygon(0 0, 95% 0, 65% 100%, 0 100%);
+    filter:drop-shadow( lightgray 0 0 6px 5px);
+    position: relative;
+    left: -5vw;    
+}
+
+
+#orientationVideo .orient-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.orient-video video{
+    box-shadow: lightgray 0 0 6px 5px;
+}
 
