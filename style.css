@@ -1,0 +1,43 @@
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.footer {
+    background-color: F8F6F4;
+    padding: 27px 0 15px 0;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 103px;
+}
+
+.copyright{
+    color: 8D8C8C;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+.links a{
+    color: 8D8C8C;
+}
+body{
+    margin: 0;
+}
