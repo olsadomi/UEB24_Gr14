@@ -4,7 +4,7 @@
     --blue: #0C356A;
     --lightblue: #0174BE;
     --yellow:#FFC436;
-    --lightyellow: #FFF0CE
+    --lightyellow: #FFF0CE;
 }
 
 *{
@@ -12,36 +12,32 @@
     font-size: 14px;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 p{
     font-size: 18px;
 }
 
-body{
-    background-color: blue;
-}
-
 header{
-    min-height:800px;
+    min-height:52vw;
     background-image: url("Photos/cover.jpg");
     background-repeat: no-repeat;
     background-position:center center;
     background-size:cover;
     box-sizing: border-box;
-    padding: 0 120px;
+    padding: 0 8vw;
     z-index: 1;
     box-shadow: gray 0px 0px 8px 3px;
     position: relative;
-  
-
+    margin-bottom: 14vw;
 }
 
 .title-text{
     width: 80%;
     height: fit-content;
     position: relative;
-    top: 170px;
+    top: 12vw;
     color: white;
 }
 
@@ -63,14 +59,13 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 85%;
+    width: 100%;
     height: auto;
     box-sizing: border-box;
-    position: absolute;
-    bottom: -23%; 
+    position: relative;
+    top: 26vw;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
 .flashcard{
@@ -85,6 +80,7 @@ header{
     padding: 15px 20px;
     box-shadow: lightgray 0px 0px 8px 3px;
     transition: all 0.3s ease; 
+    margin-bottom: 10vw;
 }
 .flashcard:hover{
     transform: translateY(-15px);
@@ -93,11 +89,11 @@ header{
 .flashcard img{
     width:55%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
 }
 
 .flashcard h2{
-    font-size: 2em;
+    font-size: 2vw;
     color: var(--lightblue);
     text-decoration: underline var(--yellow) 4px;
     margin-bottom: 15px;
@@ -105,17 +101,26 @@ header{
 
 .flashcard p{
     text-align: center;
+    font-size: 1.3vw;
 }
 
-/* ----------- TEST -------- */
+.section-title{
+    font-size: 2.6vw;
+    color: var(--lightblue);
+    text-decoration: underline var(--yellow) 4px;
+    margin: 4vw 0 2vw 0;
+}
+
+/* ----------- EXPERIENCES -------- */
 .bg-container{
-    background-image: url("Photos/bg-cover2.jpg");
-    background-repeat: repeat-y;
-    background-position:  -10% 40%;
-    background-size:45% 75%;
+    background-image: url("Photos/bg-cover4.jpg"), url("Photos/bg-cover5.jpg");
+    background-repeat:no-repeat, no-repeat;
+    background-position:  -10% 40%, bottom right;
+    background-size:100vh 95vw, 60vh 55vw;
+    background-origin: border-box;
     filter: blur();
     width: 100%;
-    height: 2000px;
+    height: 2300px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -123,72 +128,361 @@ header{
 }
 
 #experience{
-    background-color: red;
     box-sizing: border-box;
-    padding: 0 120px;
-    width: 85%;
+    width: 87%;
     height: auto;
-    position: absolute;
-    top: 12%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#experience .section-title{
-    font-size: 35px;
-    color: var(--lightblue);
-    text-decoration: underline var(--yellow) 4px;
-    margin-bottom: 15px;
-}
-
-#experience .airport-city{
+#experience .experience-filter{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 55%;
-    height: 60px;
-    border-radius: 20px;
+    height: 4vw;
+    border-radius: 15px;
     overflow: hidden;
 }
 
-#experience .airport-city div{
+#experience .experience-filter div{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 49.5%;
     height: inherit;
-    background-color: var(--blue);
-    color: white;
+}
+#experience .experience-filter div:hover{
+    cursor: pointer;
 }
 
-#experience .airport-city .icon{
-    font-size: 20px;
+
+#experience .experience-filter p{
+    font-size: 1.3vw;
+}
+#experience .experience-filter i{
+    font-size: 1.8vw;
 }
 
 .exp-photo-container{
-    background-color: #FFC436;
     width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    gap: 2vw;
+    padding-top: 8vh;
+    transition: all 0.5s ease-in-out;
 }
 
 .exp-photo{
-    min-width: 250px;
-    border: #0174BE 2px solid;
-    height: 250px;
-    background-color: white;
-    transition: transform 0.5s ease-in-out;
+    width: 15vw;
+    border-radius: 5%;
+    height: 20vw;
     position: relative;
+    box-shadow: gray 0 0 6px 5px;
+    transition: transform 0.5s ease-in-out;
+    background-position: -15px ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-bottom: 7px;
+    transition: all 0.3s ease-in-out;
+}
+.exp-photo:hover{
+    transform: translateY(-15px);
+    transform: scale(1.05);
+    box-shadow: var(--lightblue) 0 0 25px 5px;  
 }
 
-.active{
-    border: 2px orange solid;
+
+.exp-photo p{
+    font-weight: 500;
+    font-size: 0.9vw;
+    color: white;
+    padding: 0 10px;
+    background-color: #0176be6e;
+    margin: 0 5px;
+    border-radius: 12px;
+    text-shadow: 0px 0px 5px 5px var(--blue);
+    border: var(--lightblue) 3px solid;
 }
 
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.airport.active{
+    display:grid;
+    animation: fadeIn 0.7s;
+}
+
+.airport{
+    display: none;
+}
+
+#plane{
+    background-color: #69a8cf;
+    color: var(--blue);
+}
+
+#plane.active{
+    background-color:var(--blue);
+    color: white;
+}
+
+.city{
+    display: none;
+}
+
+.city.active{
+    display: grid;
+    animation: fadeIn 0.7s;
+}
+
+#city{
+    background-color: #69a8cf;
+    color: var(--blue);
+}
+#city.active{
+    background-color:var(--blue);
+    color: white;   
+}
+  
+/* ----------------------PARTNERS----------------------- */
+
+#partners{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+
+}
+
+.partners-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto) ;
+    gap: 30px;
+}
+
+@keyframes fadeTextIn {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+@keyframes fadeTextout{
+    0% {
+        opacity: 1;
+        display: block;
+    }
+    100% {
+        opacity:0 ;
+        display: none;
+    }
+}
+
+.partners-child{
+    width: 17vw;
+    border-radius: 5%;
+    height: 20vw;
+    position: relative;
+    box-shadow: gray 0 0 6px 5px;
+    transition: transform 0.5s ease-in-out;
+    background-position: -15px ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    animation: fadeTextout 0.5s;   
+    background-color: white;
+}
+.partners-child p{
+    position: absolute;
+    color: white;
+    font-size: 2.2vw;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    animation: fadeTextout 0.3s ;
+    display: none;
+}
+
+.partners-child .blueshade{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: #0c356ad4;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    animation: fadeTextout 0.5s ;
+    display: none;
+}
+
+.partners-child:hover {
+    box-shadow: var(--lightblue) 0 0 25px 5px;
+}
+.partners-child:hover .blueshade{
+    display: block;
+    animation: fadeTextIn 0.5s ;
+}
+.partners-child:hover p{
+    display: block;
+    animation: fadeTextIn 0.7s ;
+}
+
+.partners-child img{
+    width: 80%;
+    border-radius: 5%;
+}
+
+/* ---------PARKING CALCULATOR---------------- */
+
+#parkingCalc{
+    width: 80%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#parkingCalc .parking-container{
+    width: 95%;
+    background-image: linear-gradient(to left bottom, #0c356a, #0e4079, #104b88, #0f5798, #0c63a8, #3c72b5, #5882c1, #7192ce, #9cabda, #c1c5e6, #e2e1f2, #ffffff);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px 30px;
+    box-shadow: gray 0 0 6px 5px;
+    transition: all ease-in-out 0.3s;
+}
+#parkingCalc .parking-container:hover{
+    box-shadow: var(--lightblue) 0 0 25px 5px;
+}
+.parking-container p{
+    color: var(--blue);
+    font-size: 1vw;
+}
+
+.parking-prices{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parking-prices table{
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    border: 3px solid transparent; 
+    border-radius: 20px; 
+    padding: 0 20px;
+}
+    
+table tr td:first-child{
+    text-align: right;
+}
+table tr td:last-child{
+    text-align: left;
+}
+
+table td{
+    background-color: transparent;
+    border-bottom: var(--blue) 3px solid;
+    width: 50%;
+    padding: 7px 15px;
+    font-size: 1.2vw;
+}
+
+
+.parking-calculator{
+    width: 40%;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.parking-calculator #sub-container{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+}
+
+#sub-container input{
+    width: 12vw;
+    height: 2vw;
+    margin-bottom: 1.5vw;
+    border-radius: 10px;
+    border: none;
+}
+#sub-container label{
+    font-size: 1.2vw;
+    margin-bottom: 0.2vw;
+}
+.parking-calculator div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.parking-calculator p{
+    font-weight: bold;
+    font-size: 1.8vw;
+    color: var(--yellow);
+    display: none;
+    transition: all 0.3s ease-out;
+}
+.parking-calculator p.showQmimi{
+    animation: fadeTextIn 0.5s;
+    transform: translateY(15px);
+}
+#btn-parking{
+    width: 15vw;
+    height: 3vw;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: var(--blue);
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+#btn-parking:hover{
+    transform: scale(1.05);
+    background-color: var(--blue);
+    color: white;
+}
 
 

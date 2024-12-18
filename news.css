@@ -15,9 +15,7 @@
 a{
     text-decoration: none;
 }
-img{
-    width: 100%;
-}
+
 /*Dizajnimi i section*/
 section{
     padding: 20px 20px 0 20px;
@@ -28,6 +26,7 @@ section{
     background-image: url(fotot/bg-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center -100px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -75,6 +74,10 @@ section{
     box-shadow: 0 4px 14px hsl(355deg 25% 15%/10%);
     padding: 15px;
     border-radius: 10px;
+    transition: all 0.3s ease; 
+}
+.post-box:hover{
+    transform: scale(1.05);
 }
 .post-img{
     width: 100%;
