@@ -154,13 +154,9 @@
         <section id="parkingCalc">
             <h1 class="section-title">Parking Calculator</h1>
 
-            <div class="container">
+            <div class="parking-container">
                 <div class="parking-prices">
                     <table>
-                        <tr>
-                            <th>0-15 MINUTA</th>
-                            <th>Falas</th>
-                        </tr>
                         <tr>
                             <td>0-15 MINUTA</td>
                             <td>Falas</td>
@@ -190,20 +186,25 @@
                 </div>
 
                 <div class="parking-calculator">
-                    <div class="entry">
-                        <label for="Entry Date" style="display: block;">Data hyrjes</label>
-                        <input type="date" name="data-hyrje" value="">
-                        <input type="time" name="time-hyrje" value="">
+                    <div id="sub-container">
+                        <div>
+                            <label for="Entry Date">Data hyrjes</label>
+                            <input type="date" id="data-hyrje" name="data-hyrje" value="">
+                            <label for="Exit Date" >Data daljes</label>
+                            <input type="date" id="data-dalje" name="data-exit" value="">
+                        </div>
+                        <div>
+                            <label for="Koha">Koha hyrjes</label>
+                            <input type="time" id="koha-hyrje" name="time-entry" value="">
+                            <label for="Koha">Koha daljes</label>
+                            <input type="time" id="koha-dalje" name="time-exit" value="">
+                        </div>
                     </div>
-                    <div class="arrival">
-                        <label for="Exit Date" style="display: block;">Data daljes</label>
-                        <input type="date" name="data-exit" value="">
-                        <input type="time" name="time-exit" value="">
-                    </div>
-    
+                    
+                    <p id="showQmimi"></p>
+                    <button type="submit" id="btn-parking">Llogarit</button>
                 </div>
             </div>
-            
         </section>
 
     </div>
