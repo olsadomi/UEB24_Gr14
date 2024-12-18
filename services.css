@@ -81,7 +81,7 @@
 }
 
 
-/*------------------------------------SERVICES*/
+/*------------------------------------SERVICES----------------------*/
 
 #services-header {
     background: url(services-bg-pic.jpg);
@@ -161,6 +161,10 @@ canvas {
     color: #fff0ce;
     padding: 10px 20px;
     border-radius: 10px;
+}
+
+#where-to-buy-tickets-section abbr {
+    font-size: 24px;
 }
 
 #where-to-buy-tickets-section table {
@@ -451,7 +455,6 @@ canvas {
     background-color: #0174be;
     border: none;
     border-radius: 50%;
-    font-size: 35px;
     margin: 0;
     width: 350px;
     height: 350px;
@@ -466,6 +469,7 @@ canvas {
     text-decoration: none;
     font-weight: bold;
     color: white;
+    font-size: 35px;
 }
 #transport-container .transport-circle span {
     text-decoration: underline;
@@ -542,16 +546,17 @@ canvas {
     width: 500px;
 }
 
-h3 {
+.calculator h3 {
     text-align: center;
     color: #fff0ce;
     font-weight: bold;
+    font-size: 22px;
 }
 
 .input-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin: 20px 0;
     align-items: center;
 }
 
@@ -707,7 +712,13 @@ button:hover {
 p {
     font-size: 25px;
     margin-top: 10px;
+    margin-bottom: 30px;
     font-weight: 600;
+}
+
+#rating-value {
+    font-size: 25px;
+    color: #0174be;
 }
 
 
