@@ -1,3 +1,9 @@
+$(function(){
+    $("#navbar-placeholder").load("nav.html");
+    $("#footer-placeholder").load("footer.html");
+});
+
+
 const tab = document.getElementById('tab');
 const tabContent = document.querySelector('#tab-content #tab-details');
 const closeButton = document.querySelector('#close-button');
@@ -58,3 +64,54 @@ window.addEventListener("click", (event) => {
         tab.style.display = "none";
     }
 })
+
+
+function calculateFee() {
+    const entryDate = new Date(document.getElementById("entryDate").value);
+    const exitDate = new Date(document.getElementById("exitDate").value);
+
+    const entryHour = parseInt(document.getElementById("entryHour").value);
+    const entryMin = parseInt(document.getElementById("entryMin").value);
+    const exitHour = parseInt(document.getElementById("exitHour").value);
+    const exitMin = parseInt(document.getElementById("exitMin").value);
+
+    entryDate.setHours(entryHour, entryMin);
+    exitDate.setHours(exitHour, exitMin);
+
+    if (isNaN(entryDate) || isNaN(exitDate)) {
+        document.getElementById("result").innerHTML = "Të lutem mbush të gjitha të dhënat!";
+        return;
+    }
+
+    const durationInMs = exitDate - entryDate;
+    if (durationInMs <= 0) {
+        document.getElementById("result").innerHTML =
+            "Data e daljes duhet të jetë më e vonshme se data e hyrjes!";
+        return;
+    }
+
+    const hours = durationInMs / (1000 * 3600);
+
+    const days = Math.floor(hours / 24);
+    const remainingHours = hours % 24;
+
+    let fee = 0;
+    let resultText = `Koha e parkingut: ${days} dite dhe ${remainingHours.toFixed(2)} ore<br>`;
+
+    fee = days * 8;
+
+    if (remainingHours <= 0.25) {
+    } else if (remainingHours <= 2) {
+        fee += 2;
+    } else if (remainingHours <= 6) {
+        fee += 4;
+    } else if (remainingHours <= 12) {
+        fee += 6;
+    } else {
+        fee += 8;
+    }
+
+    resultText += `<br>Totali: ${fee}&#8364;`;
+
+    document.getElementById("result").innerHTML = resultText;
+}

@@ -19,31 +19,11 @@
                 <a href="services.html">Serviset</a>
                 <a href="news.html">Lajme</a>
                 <a href="about_us.html">Rreth Nesh</a>
-                <a href="contact.html">Konakt</a>
+                <a href="contact.html">Kontakt</a>
             </div>
         </div>
     </nav>
 
-    <script>
-        var container = document.querySelector(".container")
-      
-
-        function changeBg(){
-            var scrollValue = window.scrollY;
-            if(scrollValue>10){
-                container.classList.add("scroll")
-            }else{
-                container.classList.remove("scroll")
-                
-            }
-        }
-
-        window.addEventListener("scroll", changeBg);
-
-        document.querySelector(".image").addEventListener("click", function(){
-            window.location.href="index.html";
-        });
-        document.querySelector(".image").style.cursor = "pointer";
-    </script>
+    <script src="nav.js"></script>
 </body>
 </html>
