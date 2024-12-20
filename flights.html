@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="flights.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
-    
 </head>
 
 <body>
     <div id="nav-bar-placeholder">
         <nav>
-            <div class="container">
+            <div class="containerflights">
                 <div class="image">
                     <img src="Photos/logo2.png" id="logo1" alt="">
                     <h1 id="logo-text">Prishtina Airport</h1>
@@ -44,7 +45,7 @@
     </header>
 
     <section class="flights-arritjet">
-        <div class="container">
+        <div class="containerflights">
             <div class="constraint">
                 <div class="row">
                     <h2 id="title3">Mberritjet</h2>
@@ -67,7 +68,7 @@
             </div>
             <div class="flights-arritjet-container">
                 <div class="constraint">
-                    <div class="container">
+                    <div class="containerflights">
                         <ul id="flights-container1">
                             <li>
                                 <ul>
@@ -81,21 +82,88 @@
                                 </ul>
                             </li>
                             <li id="flight-001">
-                                <a href="flights/flight001">
+                                <a href="flights/arrivals/flight001">
                                     <ul>
                                         <li>00:05</li>
                                         <li>15/12/2024</li>
                                         <li>Milan Malpensa</li>
                                         <li>Wizz Air Malta</li>
                                         <li>W4 5026</li>
+                                        <li >Landed</li>
+                                        <div id="btnli">
+                                        <li>
+                                            <span class="linkdetails">
+                                            <div id="linkbtn">
+                                            <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                             </div>  
+                                            </span>
+                                        </li>
+                                    </div>
+                                    </ul>
+                                </a>
+                                <a href="flights/arrivals/flight002">
+                                    <ul>
+                                        <li>00:45</li>
+                                        <li>20/12/2024</li>
+                                        <li>Catania (IT)</li>
+                                        <li>Wizz Air Malta</li>
+                                        <li>W4 5064</li>
+                                        <li>Landed</li>
+                                         
+                                            <div id="btnli">
+                                                <li>
+                                                <span class="linkdetails">
+                                                <div id="linkbtn">
+                                                <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                 </div>  
+                                                </span>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </a>
+                                <a href="flights/arrivals/flight003">
+                                    <ul>
+                                        <li>00:50</li>
+                                        <li>20/12/2024</li>
+                                        <li>Vienna/Vjene (AT)</li>
+                                        <li>Austrian Arilines AG</li>
+                                        <li>OS 849</li>
                                         <li>Landed</li>
                                         <li><span class="link"><svg viewBox="0 0 30 20">
                                                     <path d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
                                                     <path class="second-arrow"
                                                         d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
                                                 </svg></span>
-                                            <div></div>
-                                        </li>
+                                    </ul>
+                                </a>
+                                <a href="flights/arrivals/flight004">
+                                    <ul>
+                                        <li>01:20</li>
+                                        <li>20/12/2024</li>
+                                        <li>Rome Fiumicino (IT)</li>
+                                        <li>Wizz Air Malta</li>
+                                        <li>W4 5014</li>
+                                        <li>Landed</li>
+                                        <li><span class="link"><svg viewBox="0 0 30 20">
+                                                    <path d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                    <path class="second-arrow"
+                                                        d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                </svg></span>
+                                    </ul>
+                                </a>
+                                <a href="flights/arrivals/flight005">
+                                    <ul>
+                                        <li>01:25</li>
+                                        <li>20/12/2024</li>
+                                        <li>Bologna/Bolonje(IT)</li>
+                                        <li>Wizz Air Malta</li>
+                                        <li>W4 5050</li>
+                                        <li>Landed</li>
+                                        <li><span class="link"><svg viewBox="0 0 30 20">
+                                                    <path d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                    <path class="second-arrow"
+                                                        d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                </svg></span>
                                     </ul>
                                 </a>
                             </li>
@@ -106,7 +174,7 @@
     </section>
 
     <section class="flights-nisjet">
-        <div class="container">
+        <div class="containerflights">
             <div class="constraint">
                 <div class="row">
                     <h2 id="title3">Nisjet</h2>
@@ -127,77 +195,158 @@
                     <input id="srchArr" type="text" placeholder="Kerko Nisjet...">
                 </div>
             </div>
+            <div class="flights-arritjet-container">
+                <div class="constraint">
+                    <div class="containerflights">
+                        <ul id="flights-container1">
+                            <li>
+                                <ul>
+                                    <li>Time</li>
+                                    <li>Date</li>
+                                    <li>Origin</li>
+                                    <li>Airline</li>
+                                    <li>Flight no.</li>
+                                    <li>Status</li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li id="flight-001">
+                                <a href="flights/departures/flight001">
+                                    <ul>
+                                        <li>02:25</li>
+                                        <li>20/12/2024</li>
+                                        <li>Sabiha Gokcen Intl.</li>
+                                        <li>Pegasus Airlines</li>
+                                        <li>PC 284</li>
+                                        <li>Departed/Pending Arrival</li>
+                                        <li><span class="link"><svg viewBox="0 0 30 20">
+                                                    <path d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                    <path class="second-arrow"
+                                                        d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                </svg></span>
+                                            <div></div>
+                                        </li>
+
+                                    </ul>
+                                </a>
+                                <a href="flights/departures/flight001">
+                                    <ul>
+                                        <li>04:00</li>
+                                        <li>20/12/2024</li>
+                                        <li>London Luton (GB)</li>
+                                        <li>Wizz Air UK</li>
+                                        <li>W9 5005</li>
+                                        <li>Departed/Pending Arrival</li>
+                                        <li><span class="link"><svg viewBox="0 0 30 20">
+                                                    <path d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                    <path class="second-arrow"
+                                                        d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                </svg></span>
+                                            <div></div>
+                                        </li>
+                                    </ul>
+                                </a>
+                                    <a href="flights/departuresflight001">
+                                        <ul>
+                                            <li>06:00</li>
+                                            <li>20/12/2024</li>
+                                            <li>Cienna/Vjene (AT)</li>
+                                            <li>Austrian Airlines AG</li>
+                                            <li>OS 850</li>
+                                            <li>Departed/Pending Arrival</li>
+                                            <li><span class="link"><svg viewBox="0 0 30 20">
+                                                        <path d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                        <path class="second-arrow"
+                                                            d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                    </svg></span>
+                                                <div></div>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <a href="flights/departures/flight001">
+                                        <ul>
+                                            <li>06:00</li>
+                                            <li>20/12/2024</li>
+                                            <li>Brussels Charleroi(BE)</li>
+                                            <li>Wizz Air Malta</li>
+                                            <li>W4 5131</li>
+                                            <li>Departed/Pending Arrival</li>
+                                            <li><span class="link"><svg viewBox="0 0 30 20">
+                                                        <path d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                        <path class="second-arrow"
+                                                            d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                    </svg></span>
+                                                <div></div>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <a href="flights/departures/flight001">
+                                        <ul>
+                                            <li>06:05</li>
+                                            <li>20/12/2024</li>
+                                            <li>Dortmund(DE)</li>
+                                            <li>Wizz Air Malta</li>
+                                            <li>W4 5101</li>
+                                            <li>Departed/Pending Arrival</li>
+                                            <li><span class="link"><svg viewBox="0 0 30 20">
+                                                        <path d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                        <path class="second-arrow"
+                                                            d="M2.35,0,0,2.35,7.63,10,0,17.65,2.35,20l10-10Z"></path>
+                                                    </svg></span>
+                                                <div></div>
+                                            </li>
+                                        </ul>
+                                    </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <div id="footer-placeholder">
+        <footer class="footer">
+            <div class="container">
+                <div class="logos">
+                    <div class="social-logos">
+                        <img src="facebook-logo.png">
+                        <img src="instagram-logo.png">
+                        <img src="linkedin-logo.png">
+                        <img src="X-logo.png">
+                    </div>
+                </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="logos">
-                <div class="social-logos">
-                    <img src="facebook-logo.png">
-                    <img src="instagram-logo.png">
-                    <img src="linkedin-logo.png">
-                    <img src="X-logo.png">
+                <hr>
+
+                <div class="bottom">
+                    <div class="copyright">
+                        <p>© Prishtina International Airport J.S.C 2024 All Rights Reserved</p>
+                    </div>
+                    <div class="links">
+                        <a href="index.html">Home</a>
+                        <a href="about_us.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="news.html">News</a>
+                        <a href="about_us.html">About Us</a>
+                    </div>
                 </div>
             </div>
 
-            <hr>
+        </footer>
+    </div>
 
-            <div class="bottom">
-                <div class="copyright">
-                    <p>© Prishtina International Airport J.S.C 2024 All Rights Reserved</p>
-                </div>
-                <div class="links">
-                    <a href="index.html">Home</a>
-                    <a href="about_us.html">About Us</a>
-                    <a href="services.html">Services</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="news.html">News</a>
-                    <a href="about_us.html">About Us</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div id="footer-placeholder"></div>
 
 
 
 </body>
 
-<!-- <script>
-    function changeBg(){
-        var navbar = document.getElementById("nav");
-        var links = document.getElementsByClassName("links")
-        var scrollValue = window.scrollY;
-        if(scrollValue < 10){
-            navbar.classList.remove("bgColor")
-            links.classList.remove("bgLink")
-        }else{
-            navbar.classList.add("bgColor")
-            links.classList.add("bgLink")
-        }
-    }
 
-    window.addEventListener("scroll", changeBg);
-</script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-    $(function(){
-    $("#nav-placeholder").load("nav.html");
-    $("#footer-placeholder").load("footer.html");
-});
+<script src="flights.js"></script>
 
-</script>
-<script src="flights.js"></script> -->
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-    $(function () {
-        $("#nav-placeholder").load("nav.html");
-        $("#footer-placeholder").load("footer.html");
-    });
 
 
 </script>

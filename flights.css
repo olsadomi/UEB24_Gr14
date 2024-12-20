@@ -23,7 +23,7 @@ html {
      margin: 30px;
  }
  
- .container {
+ .containerflights {
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -103,6 +103,14 @@ html {
      margin-bottom: 0px;
  }
  
+.flights-arritjet{
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
  .flights-arritjet-container {
      background-color: white;
      padding: 0 0 64px;
@@ -137,6 +145,7 @@ html {
  
  .flights-arritjet-container ul li ul {
      border-bottom: 2px solid ;
+     border-block-end-width: 9;
      display: grid;
      grid-template-columns: 0.4fr 0.5fr 1fr 1fr 0.6fr 0.5fr 48px;
      gap: 10px;
@@ -155,13 +164,13 @@ html {
      background-color: transparent;
  }
  
- .flights-arritjet-container ul li ul li .link {
+ .flights-arritjet-container ul li ul li .linkdetails {
      height: 22px;
      display: block;
      font-weight: bold;
  }
  
- .link {
+ .linkdetails {
      cursor: pointer;
      position: relative;
  }
@@ -171,7 +180,7 @@ html {
      line-height: 1.5em;
  }
  
- .flights-arritjet-container ul li ul li .link svg {
+ .flights-arritjet-container ul li ul li .linkdetails svg {
      width: 26px;
      height: 26px;
      opacity: 1;
@@ -179,9 +188,9 @@ html {
      top: 0;
  }
  
- .link svg {
+ .linkdetials #linkbtn {
      position: absolute;
-     transition: all 150ms ease-in-out;
+    
  }
  
  a {
@@ -190,7 +199,9 @@ html {
  }
  
  .flights-nisjet {
-     margin: 20px;
+     margin: 10px;
+     margin-left: 10%;
+     margin-right: 10%;
  }
  
  
@@ -264,4 +275,37 @@ html {
          padding: 10px;
      }
  }
+
+
  
+ #btnli li {
+    display: flex;  /* Use flexbox to center the content */
+    justify-content: center;  /* Center the button horizontally */
+    align-items: center;  /* Center the button vertically */
+    height: 100%;  /* Take the full height of the li */
+    padding: 0;  /* Remove any default padding */
+    margin-right: 20px;
+    
+}
+
+.view-details-btn {
+    background-color: transparent;  /* No background */
+    border: none;  /* Remove default button border */
+    cursor: pointer;  /* Change cursor to pointer to indicate clickable */
+    padding: 5px;  /* Optional padding around the image */
+    display: flex;  /* Ensure the image inside the button is centered */
+    justify-content: center;
+    align-items: center;
+}
+
+.view-details-btn img {
+    width: 20px;  /* Adjust image size */
+    height: 20px;  /* Maintain aspect ratio */
+    transition: transform 0.3s ease;  /* Smooth scaling on hover */
+}
+
+.view-details-btn:hover img {
+    transform: scale(1.2);  /* Slightly enlarge the image on hover */
+}
+
+
