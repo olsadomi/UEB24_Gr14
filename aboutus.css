@@ -1,9 +1,6 @@
-.background-image {
-    width: 100vw;
-
-    img {
-        width: 100vw;
-    }
+.background-image img{
+    width: 100%;
+    max-width: 100%;
 }
 
 .titulli-aboutus {
