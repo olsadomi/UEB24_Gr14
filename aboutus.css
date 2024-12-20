@@ -12,12 +12,30 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 
 }
 
 .titulli-aboutus h3 {
     font-size: 100px;
     color: white;
+}
+
+.titulli-aboutus p{
+    font-size: 30px;
+    color: white;
+}
+
+.titulli-aboutus em{
+    font-size: 30px;
+    color: #0A9FFF;
+
+}
+
+.titulli-aboutus b{
+    font-size: 30px;
+    color: #FFC436;
+
 }
 
 .pjesa1 {
@@ -71,6 +89,10 @@
     height: auto;
 }
 
+.stats-aboutus{
+    padding: 60px;
+}
+
 .stats-titulli{
     display: flex;
     justify-content: center;
@@ -86,7 +108,7 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 50px 0px;
+    padding: 70px 0px;
 }
 
 .stats-card{
