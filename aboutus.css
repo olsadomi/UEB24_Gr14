@@ -12,12 +12,29 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
+    text-align: center;
 }
 
 .titulli-aboutus h3 {
     font-size: 100px;
     color: white;
+}
+
+.titulli-aboutus p {
+    font-size: 30px;
+    color: white;
+}
+
+.titulli-aboutus em {
+    font-size: 30px;
+    color: #0A9FFF;
+
+}
+
+.titulli-aboutus b {
+    font-size: 30px;
+    color: #FFC436;
+
 }
 
 .pjesa1 {
@@ -30,11 +47,12 @@
     align-items: center;
     gap: 103px;
     padding: 30px 0 0 0;
-    width: 70%;  /* Fixed width */
+    width: 70%;
+    /* Fixed width */
     margin: 50px auto;
 }
 
-.pjesa-2-foto img{
+.pjesa-2-foto img {
     width: 500px;
     height: auto;
 }
@@ -55,7 +73,7 @@
     align-items: center;
 }
 
-.learn-more-text{
+.learn-more-text {
     width: 500px;
     height: auto;
 }
@@ -67,9 +85,193 @@
 }
 
 .learn-more img {
-    width: 175px; 
+    width: 175px;
     height: auto;
+}
+
+.stats-aboutus {
+    padding: 60px;
+}
+
+.stats-titulli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-titulli p {
+    font-size: 30px;
+    color: #0C356A;
+}
+
+.stats-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0px;
+}
+
+.stats-card {
+    transition: 0.3s all !important;
+    backface-visibility: hidden;
+}
+
+.stats-card :hover {
+
+    color: white;
+
+}
+
+.stats-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 100px;
+}
+
+
+.stats-card .back {
+    transform: perspective(400px) rotateY(0deg);
+}
+
+.stats-card .front {
+    transform: perspective(400px) rotateY(-179.9deg);
+}
+
+.stats-card:hover .back,
+.stats-card:focus .back {
+    transform: perspective(400px) rotateY(179.9deg);
+}
+
+.stats-card:hover .front,
+.card:focus .front {
+    transform: perspective(400px) rotateY(0deg);
+}
+
+.stats-card img {
+    width: 275px;
+    height: auto;
+
+}
+
+.stats-card1 img {
+    width: 350px;
+    height: auto;
+}
+
+.cards23 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 100px;
 }
 
 
 
+
+.flip3D>.front-x {
+    transform: perspective(600px) rotateX(0deg);
+    background: white;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.flip3D>.back-x {
+    transform: perspective(600px) rotateX(180deg);
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.flip3D:hover>.front-x {
+    transform: perspective(600px) rotateX(-180deg);
+    backface-visibility: hidden;
+
+}
+
+.flip3D:hover>.back-x {
+    transform: perspective(600px) rotateX(0deg);
+    backface-visibility: hidden;
+}
+
+.flip3D {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    perspective: 600px;
+    border-radius: 50%;
+    /* Optional: Makes it circular */
+}
+
+.flip3D>.front-x,
+.flip3D>.back-x {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    color: white;
+    border-radius: 50%;
+    /* Optional: Makes front and back faces circular */
+}
+
+.flip3D>.front-x {
+    transform: perspective(600px) rotateX(0deg);
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip3D>.back-x {
+    transform: perspective(600px) rotateX(180deg);
+    display: flex;
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically */
+    text-align: center;
+    background-color: #0174BE;
+    /* Optional: Add color to the back face */
+}
+
+.back-x p {
+    width: 80%;
+}
+
+.visit-kosova-banner {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.visit-kosova-banner-foto {
+    width: 100%;
+    height: auto;
+}
+
+.visit-kosova-banner-text {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.visit-kosova-banner-text p{
+    font-size: 50px;
+}

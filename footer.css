@@ -1,10 +1,11 @@
-.container {
+.container-rr {
     max-width: 80%;
     margin: auto;
+    position: relative  ;
 }
 
 .footer {
-    background-color: F8F6F4;
+    background-color: #F8F6F4;
     padding: 27px 0 15px 0;
 }
 
@@ -30,15 +31,15 @@
 }
 
 .copyright{
-    color: 8D8C8C;
+    color: #8D8C8C;
 }
 
-.links {
+.links-footer {
     display: flex;
     gap: 15px;
 }
 .links a{
-    color: 8D8C8C;
+    color: #8D8C8C;
 }
 body{
     margin: 0;
