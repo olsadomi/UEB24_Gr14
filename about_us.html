@@ -3,10 +3,12 @@
 
 <head>
     <title>About Us</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="about_us.js"></script>
     <link rel="stylesheet" href="aboutus.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="nav.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
 </head>
 
 <body>
@@ -107,37 +109,33 @@
 
 
 
-    <footer class="footer">
-        <div class="container-rr">
-            <div class="logos">
-                <div class="social-logos">
-                    <img src="facebook-logo.png">
-                    <img src="instagram-logo.png">
-                    <img src="linkedin-logo.png">
-                    <img src="X-logo.png">
-                </div>
-            </div>
 
-            <hr>
 
-            <div class="bottom">
-                <div class="copyright">
-                    <p>© Prishtina International Airport J.S.C 2024 All Rights Reserved</p>
-                </div>
-                <div class="links-footer">
-                    <a href="index.html">Home</a>
-                    <a href="flights.html">Flights</a>
-                    <a href="services.html">Services</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="news.html">News</a>
-                    <a href="about_us.html">About Us</a>
-                </div>
-            </div>
+
+
+
+    <button onclick="popupFn()">Newsletter</button>
+
+    <div id="overlay" style="display: none;"></div>
+    <div id="popupDialog" style="display: none;">
+        <button class="close-btn" onclick="closeFn()">&times;</button>
+
+        <div class="newsletter-text">
+            <h2>Fluturime & Oferta - Të rejat nga Aeroporti</h2>
+            <p>Bëhu pjesë e komunitetit tonë! Abonohu në newsletter-in tonë për të marrë informacione ekskluzive mbi ofertat speciale, shërbimet e aeroportit,
+                 këshilla udhëtimi dhe shumë më tepër. Qëndro i informuar dhe bëje përvojën tënde në aeroport më të lehtë dhe më të këndshme.</p>
+            <form>
+                <label for="nl-email">Enter your email:</label><br>
+                <input type="email" name="nl-email" placeholder="Enter email..." />
+                <button class="subscribe-btn" type="submit">Abonohu</button>
+            </form>
         </div>
-    </footer>
+    </div>
+
+
 
     <div id="footer-placeholder"></div>
-    <script src="about_us.js"></script>
+
 
 </body>
 
