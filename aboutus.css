@@ -204,7 +204,7 @@
     height: 300px;
     perspective: 600px;
     border-radius: 50%;
-    /* Optional: Makes it circular */
+  
 }
 
 .flip3D>.front-x,
@@ -218,7 +218,6 @@
     transform-style: preserve-3d;
     color: white;
     border-radius: 50%;
-    /* Optional: Makes front and back faces circular */
 }
 
 .flip3D>.front-x {
@@ -233,12 +232,9 @@
     transform: perspective(600px) rotateX(180deg);
     display: flex;
     justify-content: center;
-    /* Centers content horizontally */
     align-items: center;
-    /* Centers content vertically */
     text-align: center;
     background-color: #0174BE;
-    /* Optional: Add color to the back face */
 }
 
 .back-x p {
@@ -273,6 +269,72 @@
     font-size: 50px;
 }
 
+
+.faq{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 45px;
+    margin: 100px 0px;
+    gap: 70px;
+}
+
+
+.faq-icon img{
+    width: 600px;
+    height: auto;
+}
+
+.faq-pyetjet p {
+    display: flex;
+    font-size: 29px;
+    color: #0C356A;
+    margin: 4px;
+    padding-bottom: 30px;
+    flex-wrap: nowrap;
+}
+
+.faq-pyetje{
+    background-color: #0A9FFF;
+    height: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 15px 0px;
+    position: relative;
+    text-align: left;
+    padding-right: 30px;
+}
+
+
+.faq-btn-open{
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.faq-btn-close{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;   
+    margin: 0px 5px;
+}
 
 
 #overlay {

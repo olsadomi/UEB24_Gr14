@@ -4,7 +4,6 @@
 <head>
     <title>About Us</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="about_us.js"></script>
     <link rel="stylesheet" href="aboutus.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="nav.css">
@@ -107,14 +106,82 @@
         </div>
     </div>
 
+    <div class="container-rr">
+        <div class="faq">
+            <div class="faq-pyetjet">
+                <p>FREQUENTLY ASKED QUESTIONS</p>
+
+                <div class="faq-item">
+                    <div class="faq-pyetje">Ku është sporteli im për check-in?
+                        <button class="faq-btn-open">&plus;</button>
+                    </div>
+
+                    <div class="faq-answer">
+                        Mund të gjeni sportelin tuaj për check-in në tabelat e informacionit,
+                         ku do të shfaqet avioni dhe numri i sportelit. 
+                        Po ashtu, stafi i aeroportit mund t'ju ndihmojë nëse keni nevojë.
+                        <button class="faq-btn-close">&minus;</button>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pyetje">Cili është kufiri i peshës për bagazh?
+                        <button class="faq-btn-open">&plus;</button>
+                    </div>
+
+                    <div class="faq-answer">Kufiri i peshës për bagazh ndryshon në varësi të linjës ajrore dhe klasës së biletës. 
+                        Kontrolloni me kompaninë tuaj ajrore për detajet specifike mbi peshën e lejuar të bagazhit.
+                        <button class="faq-btn-close">&minus;</button>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+
+                    <div class="faq-pyetje">A mund të sjell lëngje në bagazhin e dorës?
+                        <button class="faq-btn-open">&plus;</button>
+                    </div>
+
+                    <div class="faq-answer">Lëngjet janë të lejuara në bagazhin e dorës vetëm nëse janë të paketuara
+                         në shishe me kapacitet deri në 100 ml dhe janë vendosur në një qese plastike të pastër dhe të mbyllur.
+                        <button class="faq-btn-close">&minus;</button>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <div class="faq-pyetje">Çfarë duhet të bëj nëse fluturimi im është vonuar?
+                        <button class="faq-btn-open">&plus;</button>
+                    </div>
+
+                    <div class="faq-answer">Në rast se fluturimi juaj është vonuar, kontaktoni stafin e kompanisë ajrore për të marrë informacion 
+                        rreth mundësive të ndryshme, përfshirë akomodimin dhe mundësitë e kalimit në fluturime të tjera.
+                        <button class="faq-btn-close">&minus;</button>
+                    </div>
+                
+                </div>
+
+            </div>
+
+            <div class="faq-icon">
+                <img src="faq image.png">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="abonohu">
+        <div class="abonohu-text">Abonohu ne newsletter-in tonë tani!</div>
+      <button onclick="popupFn()">Newsletter</button>
+        
+    </div>
 
 
 
 
 
 
-
-    <button onclick="popupFn()">Newsletter</button>
 
     <div id="overlay" style="display: none;"></div>
     <div id="popupDialog" style="display: none;">
@@ -122,8 +189,10 @@
 
         <div class="newsletter-text">
             <h2>Fluturime & Oferta - Të rejat nga Aeroporti</h2>
-            <p>Bëhu pjesë e komunitetit tonë! Abonohu në newsletter-in tonë për të marrë informacione ekskluzive mbi ofertat speciale, shërbimet e aeroportit,
-                 këshilla udhëtimi dhe shumë më tepër. Qëndro i informuar dhe bëje përvojën tënde në aeroport më të lehtë dhe më të këndshme.</p>
+            <p>Bëhu pjesë e komunitetit tonë! Abonohu në newsletter-in tonë për të marrë informacione ekskluzive mbi
+                ofertat speciale, shërbimet e aeroportit,
+                këshilla udhëtimi dhe shumë më tepër. Qëndro i informuar dhe bëje përvojën tënde në aeroport më të lehtë
+                dhe më të këndshme.</p>
             <form>
                 <label for="nl-email">Enter your email:</label><br>
                 <input type="email" name="nl-email" placeholder="Enter email..." />
@@ -136,6 +205,7 @@
 
     <div id="footer-placeholder"></div>
 
+    <script src="about_us.js"></script>
 
 </body>
 
