@@ -709,7 +709,7 @@ button:hover {
     color: gold; 
 }
 
-p {
+#star-rating-section p {
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 30px;
