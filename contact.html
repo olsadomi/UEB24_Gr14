@@ -11,25 +11,7 @@
 <script src="contact.js"></script>
 
 <body>
-    <div id="navbar-placeholder">
-        <nav>
-            <div class="container">
-                <div class="image">
-                    <img src="Photos/logo2.png" id="logo1" alt="">
-                    <h1 id="logo-text">Prishtina Airport</h1>
-                </div>
-    
-                <div class="links">
-                    <a href="index.html">Ballina</a>
-                    <a href="">Fluturime</a>
-                    <a href="services.html">Sherbimet</a>
-                    <a href="news.html">Lajme</a>
-                    <a href="about_us.html">Rreth Nesh</a>
-                    <a href="contact.html">Kontakt</a>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <div id="navbar-placeholder"></div>
 
     <section id="contact-header">
         <h1>Kontakti</h1>
@@ -111,7 +93,7 @@
 
         <details>
             <summary>Kontakto permes llogarise personale</summary>
-            <form id="personal-acc-form">
+            <form id="personal-acc-form" onsubmit="return validateLogin()">
                 <label for="username">Emri i llogarise</label>
                 <input type="text" id="username" name="username" required> <br>
 
@@ -245,6 +227,7 @@
     </section>
 
     <div id="footer-placeholder"></div>
+    
 
 </body>
 
