@@ -98,10 +98,29 @@ html {
  }
  
  #tekst {
-     text-align: left;
-     font-weight: bold;
+    flex-direction: row;
+    
      color: #FBCB0A;
      font-size: 1.25rem;
+     
+ }
+
+ #tekst mark{
+    flex-direction: row;
+    font-weight: bold;
+    color: black;
+    font-size: 1.25rem;
+ }
+
+ #flights-header > .header > p:nth-of-type(2) {
+    padding-bottom: 5rem;
+     align-self: center;
+   
+}
+
+ mark{
+    padding-left: 5px;
+    padding-right: 5px;
  }
  
  .row {
@@ -367,11 +386,26 @@ html {
     transform: translate(-50%, -50%);
     background: white;
     padding: 20px;
-    width: 300px;
+    width: 750px;
+    height: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    display: grid;
+    grid-auto-flow: row; /* Stack items in rows by default */
+    grid-auto-rows: auto; /* Ensure rows adjust to content height */
+    gap: 10px; /* Add spacing between items */
+    justify-content: center; /* Align items to the start horizontally */
+    align-content: start;
 }
+
+#flight-popup > * {
+    justify-self: start;  
+    align-self: start;  
+    width: auto;  
+    height: auto;  
+}
+
 
 #flight-popup .close {
     position: absolute;
@@ -387,5 +421,17 @@ html {
 }
 
 #tabletitle{
-    color: #0174be;
+    color: #0174be; 
+    
+}
+
+#popup-title{
+    color:#2c2c2c;
+    font-size: large;
+    justify-self: center;
+}
+
+#popup-details{
+    color:#2c2c2c;
+    justify-self: left;
 }

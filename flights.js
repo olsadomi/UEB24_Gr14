@@ -14,6 +14,7 @@ $(document).ready(function () {
         // Update the popup content
         $("#popup-title").text(flightDetails.title || "Flight Details");
         $("#popup-details").text(flightDetails.details || "No additional details available.");
+        $("#popup-scheduledArrival").text(flightDetails.scheduledArrival || "No additional details available.");
 
         // Show the popup
         $("#flight-popup, #popup-overlay").fadeIn();
