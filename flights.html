@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisjet dhe mbërritjet</title>
+    <link rel="stylesheet" href="flights.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="nav-bar-placeholder">
+        <nav>
+            <div class="containerflights">
+                <div class="image">
+                    <img src="Photos/logo2.png" id="logo1" alt="">
+                    <h1 id="logo-text">Prishtina Airport</h1>
+                </div>
+
+                <div class="links">
+                    <a href="">Ballina</a>
+                    <a href="">Fluturime</a>
+                    <a href="">Serviset</a>
+                    <a href="">Lajme</a>
+                    <a href="">Rreth Nesh</a>
+                    <a href="">Konakt</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <header id="flights-header">
+        <div class="header">
+            <h2 class="header" id="title1">Fluturimet</h2>
+            <h1 class="header" id="title2">Informatat</h1>
+            <p class="header" id="tekst">Informacioni i fluturimit në kohë reale jepet si tregues dhe është i
+                disponueshëm për fluturimet e sotme dhe të nesërme. Për më shumë informacion, ju lutemi, kontaktoni
+                linjën tuaj ajrore.</p>
+    </header>
+
+    <section class="flights-arritjet">
+        <div class="containerflights">
+            <div class="constraint">
+                <div class="row">
+                    <h2 id="title3">Mberritjet</h2>
+                </div>
+            </div>
+
+            <div class="search" id="box2">
+                <div class="search" id="Date">
+                    <label style="margin-right: 5px;">Dita</label>
+                    <select id="selectdate">
+                        <option value="">All</option>
+                        <option value="">Today</option>
+                        <option value="">Tomorrow</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <label style="margin-right: 5px;">Kerko</label>
+                    <input id="srchArr" type="text" placeholder="Kerko Mberritjet">
+                </div>
+            </div>
+            <div class="flights-arritjet-container">
+                <div class="constraint">
+                    <div class="containerflights">
+                        <ul id="flights-container1">
+                            <li>
+                                <div id="tabletitle">
+                                <ul>
+                                    <li>Time</li>
+                                    <li>Date</li>
+                                    <li>Origin</li>
+                                    <li>Airline</li>
+                                    <li>Flight no.</li>
+                                    <li>Status</li>
+                                    <li></li>
+                                
+                                </ul>
+                                </div>
+                            </li>
+                            <li id="flight-001">
+                                
+                                    <ul>
+                                        <li>00:05</li>
+                                        <li>15/12/2024</li>
+                                        <li>Milan Malpensa</li>
+                                        <li>Wizz Air Malta</li>
+                                        <li>W4 5026</li>
+                                        <li >Landed</li>
+                                        <div id="btnli">
+                                        <li><a href="#" data-details='{"title": "Flight to Milan", "details": "Departure at 10:00 AM, Terminal 2"}'> 
+                                            <span class="linkdetails">
+                                                <div id="linkbtn">
+                                                    <button class="view-details-btn">
+                                                        <img src="Photos/info-flights.png" alt="Info">
+                                                    </button>
+                                                </div>  
+                                            </span>
+                                        </a>
+                                        </li>
+                                    </div>
+                                    </ul>
+                                
+                                
+                                    <ul>
+                                        <li>00:45</li>
+                                        <li>20/12/2024</li>
+                                        <li>Catania (IT)</li>
+                                        <li>Wizz Air Malta</li>
+                                        <li>W4 5064</li>
+                                        <li>Landed</li>
+                                        <div id="btnli">
+                                            <li>
+                                                <a href="#" data-details='{"title": "Flight to Milan", "details": "Departure at 10:00 AM, Terminal 2" }'> 
+                                                <span class="linkdetails">
+                                                <div id="linkbtn">
+                                                <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                 </div>  
+                                                </span>
+                                            </a>
+                                            </li>
+                                        </div>
+                                        </ul>
+                                
+                                
+                                    <ul>
+                                        <li>00:50</li>
+                                        <li>20/12/2024</li>
+                                        <li>Vienna/Vjene (AT)</li>
+                                        <li>Austrian Arilines AG</li>
+                                        <li>OS 849</li>
+                                        <li>Landed</li>
+                                        <div id="btnli">
+                                            <li>
+                                                <a href="#" data-details='{"title": "Flight to Milan", "details": "Departure at 10:00 AM, Terminal 2"}'>  
+                                                <span class="linkdetails">
+                                                <div id="linkbtn">
+                                                <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                 </div>  
+                                                </span>
+                                            </a>
+                                            </li>
+                                        </div>
+                                        </ul>
+                                
+                               
+                                    <ul>
+                                        <li>01:20</li>
+                                        <li>20/12/2024</li>
+                                        <li>Rome Fiumicino (IT)</li>
+                                        <li>Wizz Air Malta</li>
+                                        <li>W4 5014</li>
+                                        <li>Landed</li>
+                                        <div id="btnli">
+                                            <li>
+                                                <a href="#" data-details='{"title": "Flight to Milan", "details": "Departure at 10:00 AM, Terminal 2"}'> 
+                                                <span class="linkdetails">
+                                                <div id="linkbtn">
+                                                <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                 </div>  
+                                                </span>
+                                            </li>
+                                        </a>
+                                        </div>
+                                        </ul>
+                               
+                               
+                                    <ul>
+                                        <li>01:25</li>
+                                        <li>20/12/2024</li>
+                                        <li>Bologna/Bolonje(IT)</li>
+                                        <li>Wizz Air Malta</li>
+                                        <li>W4 5050</li>
+                                        <li>Landed</li>
+                                        <div id="btnli">
+                                            <li>
+                                                <a href="#" data-details='{"title": "Flight to Milan", "details": "Departure at 10:00 AM, Terminal 2"}'> 
+                                                <span class="linkdetails">
+                                                <div id="linkbtn">
+                                                <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                 </div>  
+                                                </span>
+                                            </a>
+                                            </li>
+                                        </div>
+                                        </ul>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="flights-nisjet">
+        <div class="containerflights">
+            <div class="constraint">
+                <div class="row">
+                    <h2 id="title3">Nisjet</h2>
+                </div>
+            </div>
+
+            <div class="search" id="box2">
+                <div class="search" id="Date">
+                    <label style="margin-right: 5px;">Dita</label>
+                    <select id="selectdate">
+                        <option value="">All</option>
+                        <option value="">Today</option>
+                        <option value="">Tomorrow</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <label style="margin-right: 5px;">Kerko</label>
+                    <input id="srchArr" type="text" placeholder="Kerko Nisjet...">
+                </div>
+            </div>
+            <div class="flights-arritjet-container">
+                <div class="constraint">
+                    <div class="containerflights">
+                        <ul id="flights-container1">
+                            <li>
+                                <div id="tabletitle">
+                                <ul>
+                                    <li>Time</li>
+                                    <li>Date</li>
+                                    <li>Origin</li>
+                                    <li>Airline</li>
+                                    <li>Flight no.</li>
+                                    <li>Status</li>
+                                    <div id="btnli">
+                                        <li>
+                                        </li>
+                                    </div>
+                                </ul>
+                                </div>
+                            </li>
+                            <li id="flight-001">
+                                
+                                    <ul>
+                                        <li>02:25</li>
+                                        <li>20/12/2024</li>
+                                        <li>Sabiha Gokcen Intl.</li>
+                                        <li>Pegasus Airlines</li>
+                                        <li>PC 284</li>
+                                        <li>Departed/Pending Arrival</li>
+                                        <div id="btnli">
+                                            <li>
+                                                <a href="flights/departures/flight001"> 
+                                                <span class="linkdetails">
+                                                <div id="linkbtn">
+                                                <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                 </div>  
+                                                </span>
+                                            </a>
+                                            </li>
+                                        </div>
+                                        </ul>
+                              
+                               
+                                    <ul>
+                                        <li>04:00</li>
+                                        <li>20/12/2024</li>
+                                        <li>London Luton (GB)</li>
+                                        <li>Wizz Air UK</li>
+                                        <li>W9 5005</li>
+                                        <li>Departed/Pending Arrival</li>
+                                        <div id="btnli">
+                                            <li>
+                                                 <a href="flights/departures/flight001">
+                                                <span class="linkdetails">
+                                                <div id="linkbtn">
+                                                <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                 </div>  
+                                                </span>
+                                            </a>
+                                            </li>
+                                        </div>
+                                        </ul>
+                              
+                                    
+                                        <ul>
+                                            <li>06:00</li>
+                                            <li>20/12/2024</li>
+                                            <li>Cienna/Vjene (AT)</li>
+                                            <li>Austrian Airlines AG</li>
+                                            <li>OS 850</li>
+                                            <li>Departed/Pending Arrival</li>
+                                            <div id="btnli">
+                                                <li>
+                                                    <a href="flights/departuresflight001"> 
+                                                    <span class="linkdetails">
+                                                    <div id="linkbtn">
+                                                    <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                     </div>  
+                                                    </span>
+                                                </a>
+                                                </li>
+                                            </div>
+                                            </ul>
+                                
+                                   
+                                        <ul>
+                                            <li>06:00</li>
+                                            <li>20/12/2024</li>
+                                            <li>Brussels Charleroi(BE)</li>
+                                            <li>Wizz Air Malta</li>
+                                            <li>W4 5131</li>
+                                            <li>Departed/Pending Arrival</li>
+                                            <div id="btnli">
+                                                <li>
+                                                    <a href="flights/departures/flight001">
+                                                    <span class="linkdetails">
+                                                    <div id="linkbtn">
+                                                    <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                     </div>  
+                                                    </span>
+                                                </a>
+                                                </li>
+                                            </div>
+                                            </ul>
+                                    
+                                   
+                                        <ul>
+                                            <li>06:05</li>
+                                            <li>20/12/2024</li>
+                                            <li>Dortmund(DE)</li>
+                                            <li>Wizz Air Malta</li>
+                                            <li>W4 5101</li>
+                                            <li>Departed/Pending Arrival</li>
+                                            <div id="btnli">
+                                                <li>
+                                                    <a href="flights/departures/flight001">
+                                                    <span class="linkdetails">
+                                                    <div id="linkbtn">
+                                                    <button class="view-details-btn"><img src="Photos/info-flights.png" alt="Info"></button>
+                                                     </div>  
+                                                    </span>
+                                                </a>
+                                                </li>
+                                            </div>
+                                            </ul>
+                                  
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder">
+        <footer class="footer">
+            <div class="container">
+                <div class="logos">
+                    <div class="social-logos">
+                        <img src="facebook-logo.png">
+                        <img src="instagram-logo.png">
+                        <img src="linkedin-logo.png">
+                        <img src="X-logo.png">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="bottom">
+                    <div class="copyright">
+                        <p>© Prishtina International Airport J.S.C 2024 All Rights Reserved</p>
+                    </div>
+                    <div class="links">
+                        <a href="index.html">Home</a>
+                        <a href="about_us.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="news.html">News</a>
+                        <a href="about_us.html">About Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <div id="popup-overlay" style="display: none;"></div>
+
+    <!-- Popup Modal -->
+    <div id="flight-popup" style="display: none;">
+      <span class="close">&times;</span>
+      <h2 id="popup-title"></h2>
+      <div id="popup-details"></div>
+    </div>
+    
+
+
+      <script src="flights.js"></script>
+
+</body>
+
+
+
+
+
+ 
+
+</html>

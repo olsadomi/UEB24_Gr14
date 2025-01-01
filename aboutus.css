@@ -1,44 +1,425 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root{
-    --blue: #0C356A;
-    --lightblue: #0174BE;
-    --yellow:#FFC436;
-    --lightyellow: #FFF0CE
+.background-image img{
+    width: 100%;
+    max-width: 100%;
 }
 
-*{
-    font-family:  "Montserrat", sans-serif;
-    font-size: 14px;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-p{
-    font-size: 18px;
-}
-
-.background-image{
-    width: 100vw;
-    img{
-        width: 100vw;
-    }
-}
-
-.titulli-aboutus{
+.titulli-aboutus {
     position: absolute;
     z-index: 1;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-.titulli-aboutus h3{
+
+.titulli-aboutus h3 {
     font-size: 100px;
     color: white;
 }
 
-.pjesa1{
+.titulli-aboutus p {
+    font-size: 30px;
+    color: white;
+}
+
+.titulli-aboutus em {
+    font-size: 30px;
+    color: #0A9FFF;
+
+}
+
+.titulli-aboutus b {
+    font-size: 30px;
+    color: #FFC436;
+
+}
+
+.pjesa1 {
     position: relative;
 }
+
+.pjesa-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 103px;
+    padding: 30px 0 0 0;
+    width: 70%;
+    /* Fixed width */
+    margin: 50px auto;
+}
+
+.pjesa-2-foto img {
+    width: 500px;
+    height: auto;
+}
+
+.pjesa-2-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more-text {
+    width: 500px;
+    height: auto;
+}
+
+.learn-more-text p {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.learn-more img {
+    width: 175px;
+    height: auto;
+}
+
+.stats-aboutus {
+    padding: 60px;
+}
+
+.stats-titulli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-titulli p {
+    font-size: 30px;
+    color: #0C356A;
+}
+
+.stats-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0px;
+}
+
+.stats-card {
+    transition: 0.3s all !important;
+    backface-visibility: hidden;
+}
+
+.stats-card :hover {
+
+    color: white;
+
+}
+
+.stats-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 100px;
+}
+
+
+.stats-card .back {
+    transform: perspective(400px) rotateY(0deg);
+}
+
+.stats-card .front {
+    transform: perspective(400px) rotateY(-179.9deg);
+}
+
+.stats-card:hover .back,
+.stats-card:focus .back {
+    transform: perspective(400px) rotateY(179.9deg);
+}
+
+.stats-card:hover .front,
+.card:focus .front {
+    transform: perspective(400px) rotateY(0deg);
+}
+
+.stats-card img {
+    width: 275px;
+    height: auto;
+
+}
+
+.stats-card1 img {
+    width: 350px;
+    height: auto;
+}
+
+.cards23 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 100px;
+}
+
+
+
+
+.flip3D>.front-x {
+    transform: perspective(600px) rotateX(0deg);
+    background: white;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.flip3D>.back-x {
+    transform: perspective(600px) rotateX(180deg);
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.flip3D:hover>.front-x {
+    transform: perspective(600px) rotateX(-180deg);
+    backface-visibility: hidden;
+
+}
+
+.flip3D:hover>.back-x {
+    transform: perspective(600px) rotateX(0deg);
+    backface-visibility: hidden;
+}
+
+.flip3D {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    perspective: 600px;
+    border-radius: 50%;
+  
+}
+
+.flip3D>.front-x,
+.flip3D>.back-x {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    color: white;
+    border-radius: 50%;
+}
+
+.flip3D>.front-x {
+    transform: perspective(600px) rotateX(0deg);
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip3D>.back-x {
+    transform: perspective(600px) rotateX(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0174BE;
+}
+
+.back-x p {
+    width: 80%;
+}
+
+.visit-kosova-banner {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.visit-kosova-banner-foto {
+    width: 100%;
+    height: auto;
+}
+
+.visit-kosova-banner-text {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.visit-kosova-banner-text p{
+    font-size: 50px;
+}
+
+
+.faq{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 45px;
+    margin: 100px 0px;
+    gap: 70px;
+}
+
+
+.faq-icon img{
+    width: 600px;
+    height: auto;
+}
+
+.faq-pyetjet p {
+    display: flex;
+    font-size: 29px;
+    color: #0C356A;
+    margin: 4px;
+    padding-bottom: 30px;
+    flex-wrap: nowrap;
+}
+
+.faq-pyetje{
+    background-color: #0A9FFF;
+    height: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 15px 0px;
+    position: relative;
+    text-align: left;
+    padding-right: 30px;
+}
+
+
+.faq-btn-open{
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.faq-btn-close{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;   
+    margin: 0px 5px;
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 10;
+}
+
+#popupDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    height: auto ;
+    max-width: 800px;
+    z-index: 11;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.newsletter-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.newsletter-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0C356A;
+}
+
+.newsletter-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.newsletter-text form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.newsletter-text form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter-text form .subscribe-btn {
+    background-color: #0C356A;
+    color: white;
+    padding: 10px;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.newsletter-text form .subscribe-btn:hover {
+    background-color: #2864b2;
+}
+
