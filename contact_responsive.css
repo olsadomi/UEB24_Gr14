@@ -56,19 +56,9 @@
     }
 }
 
-
-#contact-header {
-    height: 250px;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 @media (max-width: 768px) {
     #contact-header h1 {
-        font-size: 36px;
+        font-size: 48px;
         margin-top: 100px;
     }
 
