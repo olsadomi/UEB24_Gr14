@@ -3,44 +3,30 @@ html {
     font-size: 16px;
  }
 
- .container{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between ;
-    align-items: center;
-    width: inherit;
+.nav-container {
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 80px;
-    box-sizing: border-box;
-    padding: 0px 120px ;
-    background-color: transparent;
-    color: #ffc436;
-    animation-name: out;
-    animation-duration: 0.5s;
-    position: sticky;
-    font-family:  "Montserrat", sans-serif;
+    background-color: transparent;  
+    transition: background-color 0.5s ease;  
 }
 
-.container.scroll{
+.nav-container.scroll {
+    background-color: white;  
     animation-name: in;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
-
-.container:hover{
-    animation-name: in;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
  
 .links a {
-    color:inherit;
-    font-size:20px ;
-    font-weight: 500;
-    text-decoration: none;
+    color:#ffc436 !important;
+    width: 55%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-
 
  
  #flights-header {
@@ -56,7 +42,6 @@ html {
  }
  
  .header {
-     display: flex;
      align-items: flex-start;
      flex-direction: column;
      justify-content: flex-start;
@@ -82,7 +67,7 @@ html {
  }
  
  #title2 {
-     text-align: center;
+     text-align: left;
      font-size: 3.125rem;
      font-weight: bolder;
      position: relative;
@@ -98,18 +83,17 @@ html {
  }
  
  #tekst {
-    flex-direction: row;
-    
-     color: #FBCB0A;
+    flex-direction:row;
+    color: #fbcb0a;
      font-size: 1.25rem;
-     
+     /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
  }
-
- #tekst mark{
+  #tekst mark{
     flex-direction: row;
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: 1.25rem;
+    background-color: #0174BE;
  }
 
  #flights-header > .header > p:nth-of-type(2) {
@@ -118,11 +102,6 @@ html {
    
 }
 
- mark{
-    padding-left: 5px;
-    padding-right: 5px;
- }
- 
  .row {
      margin-top: 20px;
      margin-bottom: 0px;
@@ -367,6 +346,16 @@ html {
     transform: scale(1.2);  /* Slightly enlarge the image on hover */
 }
 
+#tabletitle ul li{
+    color: #0174be;
+}
+
+#tabletitle{
+    color: #0174be; 
+    
+}
+
+
 
 #popup-overlay {
     position: fixed;
@@ -391,21 +380,25 @@ html {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    display: grid;
-    grid-auto-flow: row; /* Stack items in rows by default */
-    grid-auto-rows: auto; /* Ensure rows adjust to content height */
-    gap: 10px; /* Add spacing between items */
-    justify-content: center; /* Align items to the start horizontally */
-    align-content: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;  
+    align-items: center;
 }
 
-#flight-popup > * {
+/* #flight-popup > * {
     justify-self: start;  
     align-self: start;  
     width: auto;  
     height: auto;  
-}
+} */
 
+.titleFlex{
+    display: flex;
+
+    justify-content: space-around;
+}
 
 #flight-popup .close {
     position: absolute;
@@ -416,22 +409,53 @@ html {
     cursor: pointer;
 }
 
-#tabletitle ul li{
-    color: #0174be;
-}
 
-#tabletitle{
-    color: #0174be; 
-    
-}
 
 #popup-title{
     color:#2c2c2c;
     font-size: large;
-    justify-self: center;
+    /* padding-bottom: 7.5em; */
+    
 }
 
+ 
 #popup-details{
     color:#2c2c2c;
-    justify-self: left;
+    padding-bottom: 10em;
+    
+}
+
+#popup-scheduledArrival{
+    color:#2c2c2c;
+    
+   
+}
+
+#detailsSplit{
+    color:#2c2c2c; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#countrySplit{
+    border-left: 2px dashed #2c2c2c;
+    color:#2c2c2c;
+    display: grid;
+    grid-row: auto;
+    padding-right: 10px;
+    
+}
+
+.elementFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 750px;
+    min-height: 380px;
+}
+
+.countryInfo{
+    padding-left: 5px;
 }
