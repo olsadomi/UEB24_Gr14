@@ -11,9 +11,14 @@ $(document).ready(function () {
             return;
         }
 
-        // Update the popup content
+        // Update the popup content with line breaks in all relevant fields
         $("#popup-title").text(flightDetails.title || "Flight Details");
-        $("#popup-details").text(flightDetails.details || "No additional details available.");
+
+        // Replace \n with <br> in details and other fields
+        $("#popup-details").html(flightDetails.details ? flightDetails.details.replace(/\n/g, "<br>") : "No additional details available.");
+        $("#popup-scheduledArrival").html(flightDetails.scheduledArrival ? flightDetails.scheduledArrival.replace(/\n/g, "<br>") : "No additional details available.");
+        $("#popup-countryFrom").html(flightDetails.countryFrom ? flightDetails.countryFrom.replace(/\n/g, "<br>") : "No additional details available.");
+        $("#popup-countryDestination").html(flightDetails.countryDestination ? flightDetails.countryDestination.replace(/\n/g, "<br>") : "No additional details available.");
 
         // Show the popup
         $("#flight-popup, #popup-overlay").fadeIn();
@@ -30,4 +35,15 @@ $(document).ready(function () {
             $("#flight-popup, #popup-overlay").fadeOut();
         }
     });
+});
+
+// Scroll event to change navbar color
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.nav-container');
+    const scrollThreshold = 100; // Adjust this value to control when the color changes
+    if (window.scrollY > scrollThreshold) {
+        navbar.classList.add('scroll');
+    } else {
+        navbar.classList.remove('scroll');
+    }
 });
