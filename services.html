@@ -3,38 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sherbimet</title>
+    <title>Shërbimet</title>
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="services_responsive.css">
 </head>
 
 <body>
-    <div id="nav-bar-placeholder">
-        <nav>
-            <div class="container">
-                <div class="image">
-                    <img src="Photos/logo2.png" id="logo1" alt="">
-                    <h1 id="logo-text">Prishtina Airport</h1>
-                </div>
-
-                <div class="links">
-                    <a href="index.html">Ballina</a>
-                    <a href="">Fluturime</a>
-                    <a href="services.html">Sherbimet</a>
-                    <a href="news.html">Lajme</a>
-                    <a href="about_us.html">Rreth Nesh</a>
-                    <a href="contact.html">Kontakt</a>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <div id="navbar-placeholder"></div>
 
     <header id="services-header">
-        <h1>Sherbimet</h1>
+        <h1>Shërbimet</h1>
     </header>
 
     <section id="what-we-offer-section">
-        <h2>Cfare ofrojme ne?</h2>
+        <h2>Çfarë ofrojmë ne?</h2>
         <canvas id="circleCanvas" width="600" height="200"></canvas>
 
         <script>
@@ -86,7 +68,7 @@
     </section>
 
     <section id="where-to-buy-tickets-section">
-        <h2>Ku mund te bleni bileta ne <abbr title="Prishtina Airport">PA</abbr>?</h2>
+        <h2>Ku mund të bleni bileta në <abbr title="Prishtina Airport">PA</abbr>?</h2>
 
         <table>
             <thead>
@@ -162,7 +144,7 @@
 
     <section id="wifi-section">
         <h2>Interneti</h2>
-        <button class="wifi-button">Klikoni ketu per detajet shtese</button>
+        <button class="wifi-button">Klikoni këtu për detajet shtesë</button>
         <div class="message-box">Kemi një befasi për ju! Ne ofrojmë FREE WI-FI në çdo hapësirë të aeroportit tonë!</div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -185,19 +167,19 @@
             <div class="car-rental-brand">
                 <h3><b>Hertz</b></h3>
                 <img src="car-rental-1.jpg">
-                <p><i>Sherbehu ne Hertz - me mijera lokacione ne gjithe boten!</i></p>
+                <p><i>Shërbehu në Hertz - me mijëra lokacione në gjithë botën!</i></p>
                 <button onclick="showDetails(0)">Detajet</button>
             </div>
             <div class="car-rental-brand">
                 <h3><b>Europcar</b></h3>
                 <img src="car-rental-2.jpg">
-                <p><i>Sherbime te mrekullueshme, makina te reja, cmime marramendese!</i></p>
+                <p><i>Shërbime të mrekullueshme, makina të reja, çmime marramendëse!</i></p>
                 <button onclick="showDetails(1)">Detajet</button>
             </div>
             <div class="car-rental-brand">
                 <h3><b>AVIS</b></h3>
                 <img src="car-rental-3.jpg">
-                <p><i>Perzgjedh nga larmishmeria e pafundme e makinave qe ofrojme!</i></p>
+                <p><i>Përzgjedh nga larmishmëria e pafundme e makinave që ofrojmë!</i></p>
                 <button onclick="showDetails(2)">Detajet</button>
             </div>
         </div>
@@ -212,15 +194,15 @@
 
     <section id="transport-section">
         <div id="transport-container">
-            <div class="transport-circle"><a href="taxi.pdf" download="taxi.pdf" target="_blank">TAKSI<br> <span>Lexo me
-                        shume</span></a></div>
-            <div class="transport-circle"><a href="bus.pdf" download="bus.pdf" target="_blank">AUTOBUS <br><span>Lexo me
-                        shume</span></a></div>
+            <div class="transport-circle"><a href="taxi.pdf" download="taxi.pdf" target="_blank">TAKSI<br> <span>Lexo më
+                        shumë</span></a></div>
+            <div class="transport-circle"><a href="bus.pdf" download="bus.pdf" target="_blank">AUTOBUS <br><span>Lexo më
+                        shumë</span></a></div>
         </div>
     </section>
 
     <section id="parking-spots-section">
-        <h2>Hapesirat per parking</h2>
+        <h2>Hapësirat për parking</h2>
         <p class="counter">0</p>
 
         <table>
@@ -253,7 +235,7 @@
         </table>
 
         <div class="calculator">
-            <h3>Kalkulatori per pagesen e parkingut</h3>
+            <h3>Kalkulatori për pagesën e parkingut</h3>
 
             <div class="input-group">
                 <label for="entryDate">Data e hyrjes: </label>
@@ -310,7 +292,7 @@
     </section>
 
     <section id="star-rating-section">
-        <h2>Rate this place:</h2>
+        <h2>Vlerësoni aeroportin:</h2>
         <div class="star-rating">
             <span class="star" data-value="1">&#9733;</span>
             <span class="star" data-value="2">&#9733;</span>
@@ -318,7 +300,7 @@
             <span class="star" data-value="4">&#9733;</span>
             <span class="star" data-value="5">&#9733;</span>
         </div>
-        <p>Vleresimi juaj: <span id="rating-value">0</span> yje</p>
+        <p>Vlerësimi juaj: <span id="rating-value">0</span> yje</p>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -353,9 +335,9 @@
 
                 stars.each(function () {
                     if ($(this).data("value") <= value) {
-                        $(this).addClass("selected"); 
+                        $(this).addClass("selected");
                     } else {
-                        $(this).removeClass("selected"); 
+                        $(this).removeClass("selected");
                     }
                 });
             });
@@ -409,8 +391,11 @@
         });
     </script>
 
+    <div id="footer-placeholder"></div>
 
     <script src="sevices.js"></script>
+
+
 </body>
 
 </html>

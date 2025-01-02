@@ -23,3 +23,14 @@ $(document).ready(function(){
         $(this).addClass("active-filter").siblings().removeClass("active-filter")
     })
 })
+
+
+// Filtrimi i postimeve nga kërkimi
+$(document).ready(function() {
+    $("#search-input").on("keyup", function() {
+        const value = $(this).val().toLowerCase();
+        $(".post-box").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+    });
+});
