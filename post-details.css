@@ -102,9 +102,17 @@ p {
 }
 
 .kategoria-post {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kategoria-post:hover{
+    background-color: #0056b3;
 }
 
 
@@ -163,3 +171,60 @@ p {
     color: #666;
     margin: 0;
 }
+
+.share-section{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.share-section button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.share-section button:hover{
+    background-color: #0056b3;
+}
+
+.comments-section{
+    margin-top: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.comments-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.comments-section textarea {
+    width: 95%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.comments-section button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comments-section button:hover {
+    background-color: #0056b3;
+}
+
