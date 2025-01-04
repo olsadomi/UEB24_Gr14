@@ -26,12 +26,12 @@ $(document).ready(function () {
     $(".faq-answer").hide();
 
     $(".faq-btn-open").click(function () {
-        $(this).closest(".faq-item").find(".faq-answer").show(500);
+        $(this).closest(".faq-item").find(".faq-answer").show(300);
         $(this).hide(); 
     });
 
     $(".faq-btn-close").click(function () {
-        $(this).closest(".faq-item").find(".faq-answer").hide(500);
+        $(this).closest(".faq-item").find(".faq-answer").hide(300);
         $(this).closest(".faq-item").find(".faq-btn-open").show();
     });
 });

@@ -275,7 +275,7 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 45px;
-    margin: 100px 0px;
+    margin: 100px 0px 0px 0px;
     gap: 70px;
 }
 
@@ -296,6 +296,7 @@
 
 .faq-pyetje{
     background-color: #0A9FFF;
+    font-size: 15px;
     height: 30px;
     padding: 15px;
     border-radius: 20px;
@@ -303,6 +304,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 .faq-answer{
@@ -324,6 +326,7 @@
     border: none;
     font-size: 25px;
     cursor: pointer;
+    color: white;
 }
 .faq-btn-close{
     position: absolute;
@@ -335,6 +338,31 @@
     cursor: pointer;   
     margin: 0px 5px;
 }
+
+
+.abonohu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.abonohu-text{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.abonohu-btn{
+    font-size: 20px;
+    border: none;
+    background-color: #0A9FFF;
+    border-radius: 30px;
+    padding:  5px 10px;
+    cursor: pointer;
+    color: white;
+}
+
+
 
 
 #overlay {
