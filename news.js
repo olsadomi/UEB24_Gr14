@@ -34,3 +34,15 @@ $(document).ready(function() {
         });
     });
 });
+
+window.onload = function(){
+    const subscribe = confirm("Deshironi te abonoheni ne newsletter?");
+    if(subscribe){
+        const email = prompt("Ju lutem shenoni emailin tuaj per t'u abonuar: ");
+        if(email.indexOf('@') == -1 || email.indexOf('.') == -1){
+            alert("Nuk u regjistrua asnje email. Nuk u abonuat ne newsletter.")
+        }else{
+            alert("Faleminderit qe u abonuat! Nje konfirmim do t'ju dergohet ne: " + email);
+        }
+    }
+};
