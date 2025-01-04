@@ -26,6 +26,11 @@
     text-decoration: none; 
     color: gray;           
 }
+
+.bottom .links-footer a:hover {
+    text-decoration: underline; 
+}
+
 .bottom {
     display: flex;
     justify-content: center;
