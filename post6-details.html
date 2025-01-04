@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="post-details.css">
+    <script src="post-details.js"></script>
 </head>
 
 <body>
@@ -34,9 +35,21 @@
                     <b>Fluturime të përkohshme:</b> Opsione për qytete si Düsseldorf dhe Stuttgart gjatë sezonit të verës.
                 </p>
             </div>
+            <div class="comments-section">
+                <h3>Komente</h3>
+                <textarea placeholder="Shkruani komentin tuaj..." rows="4"></textarea>
+                <button onclick="submitComment()">Dërgo</button>
+                <div id="comments-list">
+                </div>
+            </div>
             <div class="end-post">
                 <div class="kategoria-post">
                     Destinacionet
+                </div>
+                <div class="share-section">
+                    <button onclick="sharePost('facebook')">Facebook</button>
+                    <button onclick="sharePost('linkedin')">LinkedIn</button>
+                    <button onclick="sharePost('instagram')">Instagram</button>
                 </div>
             </div>
         </div>
@@ -53,7 +66,7 @@
                     </div>
                 </div>
                 <div class="post-item">
-                    <img src="fotot/foto1.jpg" alt="Post Image">
+                    <img src="fotot/foto1.webp" alt="Post Image">
                     <div class="grid-content">
                         <a href="post1-details.html">
                             <h4>Aeroporti i Prishtinës Përgatitet për Sezonin Dimëror me Investime në Infrastrukturë
@@ -71,15 +84,6 @@
                         <p>12 Nov 2022</p>
                     </div>
                 </div>
-                <div class="post-item">
-                    <img src="fotot/foto3.webp" alt="Post Image">
-                    <div class="grid-content">
-                        <a href="post3-details.html">
-                            <h4>Projekti i Ri "Green Airport" Ndryshon Pamjen e Aeroportit të Prishtinës</h4>
-                        </a>
-                        <p>1 Feb 2024</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -90,6 +94,7 @@
             $("#footer-placeholder").load("footer.html");
         })
     </script>
+    <div id="footer-placeholder"></div>
 </body>
 
 </html>
