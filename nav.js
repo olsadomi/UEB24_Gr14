@@ -1,5 +1,5 @@
 
-var container = document.querySelector(".container")
+var container = document.querySelector(".nav-container")
 
 
 function changeBg() {

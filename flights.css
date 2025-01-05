@@ -2,6 +2,32 @@ html {
     background-color: #f5f5f5;
     font-size: 16px;
  }
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;  
+    transition: background-color 0.5s ease;  
+}
+
+.nav-container.scroll {
+    background-color: white;  
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+ 
+.links a {
+    color:#ffc436 !important;
+    width: 55%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
  
  #flights-header {
      background: url("Photos/background-flights.jpg");
@@ -16,7 +42,6 @@ html {
  }
  
  .header {
-     display: flex;
      align-items: flex-start;
      flex-direction: column;
      justify-content: flex-start;
@@ -42,7 +67,7 @@ html {
  }
  
  #title2 {
-     text-align: center;
+     text-align: left;
      font-size: 3.125rem;
      font-weight: bolder;
      position: relative;
@@ -58,12 +83,25 @@ html {
  }
  
  #tekst {
-     text-align: left;
-     font-weight: bold;
-     color: #FBCB0A;
+    flex-direction:row;
+    color: #fbcb0a;
      font-size: 1.25rem;
+     /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
  }
- 
+  #tekst mark{
+    flex-direction: row;
+    font-weight: bold;
+    color: white;
+    font-size: 1.25rem;
+    background-color: #0174BE;
+ }
+
+ #flights-header > .header > p:nth-of-type(2) {
+    padding-bottom: 5rem;
+     align-self: center;
+   
+}
+
  .row {
      margin-top: 20px;
      margin-bottom: 0px;
@@ -158,7 +196,7 @@ html {
      font-style: normal;
      font-weight: 400;
      line-height: 1.5em;
-     color: #0174be;
+     color: black;
      padding: 24px 24px;
      border-bottom: none;
      background-color: transparent;
@@ -308,4 +346,116 @@ html {
     transform: scale(1.2);  /* Slightly enlarge the image on hover */
 }
 
+#tabletitle ul li{
+    color: #0174be;
+}
 
+#tabletitle{
+    color: #0174be; 
+    
+}
+
+
+
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+#flight-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    width: 750px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;  
+    align-items: center;
+}
+
+/* #flight-popup > * {
+    justify-self: start;  
+    align-self: start;  
+    width: auto;  
+    height: auto;  
+} */
+
+.titleFlex{
+    display: flex;
+
+    justify-content: space-around;
+}
+
+#flight-popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+#popup-title{
+    color:#2c2c2c;
+    font-size: large;
+    /* padding-bottom: 7.5em; */
+    
+}
+
+ 
+#popup-details{
+    color:#2c2c2c;
+    padding-bottom: 10em;
+    
+}
+
+#popup-scheduledArrival{
+    color:#2c2c2c;
+    
+   
+}
+
+#detailsSplit{
+    color:#2c2c2c; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#countrySplit{
+    border-left: 2px dashed #2c2c2c;
+    color:#2c2c2c;
+    display: grid;
+    grid-row: auto;
+    padding-right: 10px;
+    
+}
+
+.elementFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 750px;
+    min-height: 380px;
+}
+
+.countryInfo{
+    padding-left: 5px;
+}

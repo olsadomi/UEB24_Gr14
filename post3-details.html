@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="post-details.css">
+    <script src="post-details.js"></script>
 </head>
 
 <body>
@@ -34,9 +35,21 @@
                     së objektivave për një mjedis më të pastër.
                 </p>
             </div>
+            <div class="comments-section">
+                <h3>Komente</h3>
+                <textarea placeholder="Shkruani komentin tuaj..." rows="4"></textarea>
+                <button onclick="submitComment()">Dërgo</button>
+                <div id="comments-list">
+                </div>
+            </div>
             <div class="end-post">
                 <div class="kategoria-post">
                     Risi
+                </div>
+                <div class="share-section">
+                    <button onclick="sharePost('facebook')">Facebook</button>
+                    <button onclick="sharePost('linkedin')">LinkedIn</button>
+                    <button onclick="sharePost('instagram')">Instagram</button>
                 </div>
             </div>
         </div>
@@ -71,15 +84,6 @@
                         <p>15 Jan 2022</p>
                     </div>
                 </div>
-                <div class="post-item">
-                    <img src="fotot/foto7.webp" alt="Post Image">
-                    <div class="grid-content">
-                        <a href="post7-details.html">
-                            <h4>Aeroporti i Prishtinës Pret Forumin e Biznesit 2024: Mundësi të Reja për Sipërmarrësit</h4>
-                        </a>
-                        <p>17 Nov 2024</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -90,6 +94,7 @@
             $("#footer-placeholder").load("footer.html");
         })
     </script>
+    <div id="footer-placeholder"></div>
 </body>
 
 </html>

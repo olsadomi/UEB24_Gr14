@@ -26,12 +26,42 @@ $(document).ready(function () {
     $(".faq-answer").hide();
 
     $(".faq-btn-open").click(function () {
-        $(this).closest(".faq-item").find(".faq-answer").show(500);
+        $(this).closest(".faq-item").find(".faq-answer").show(300);
         $(this).hide(); 
     });
 
     $(".faq-btn-close").click(function () {
-        $(this).closest(".faq-item").find(".faq-answer").hide(500);
+        $(this).closest(".faq-item").find(".faq-answer").hide(300);
         $(this).closest(".faq-item").find(".faq-btn-open").show();
     });
 });
+
+new Swiper('.card-wrapper', {
+    loop: true,
+    spaceBetween: 30,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        },
+    }
+  });

@@ -22,11 +22,11 @@ section{
 }
 .news-home{
     width: 100%;
-    min-height: 440px; 
-    background-image: url(fotot/bg-image.jpg);
+    min-height: 460px; 
+    background-image: url(fotot/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center -100px;
+    background-position: center -50px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,6 @@ section{
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    margin-top: 20px;
 }
 .filter-item{
     cursor: pointer;
@@ -58,6 +57,18 @@ section{
     color: var(--bg-color);
     padding: 4px 10px;
     border-radius: 4px;
+}
+
+.filter-search-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.filter-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /*Post*/
@@ -96,9 +107,6 @@ section{
     font-size: 23px;
     font-weight: 600;
     color: var(--text-color);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
     overflow: hidden;
 }
 .post-date{
@@ -116,4 +124,45 @@ section{
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+/* Carousel per lajmet e fundit */
+.latest-news-carousel {
+    background: var(--container-color);
+    color: var(--bg-color);
+    padding: 20px;
+    text-align: center;
+    overflow: hidde;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    gap: 30px;
+    animation: scroll 13s linear infinite;
+}
+
+.carousel-item {
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Shiriti i kërkimit */
+.search-bar {
+    margin-left: auto;
+}
+
+#search-input {
+    width: 250px;
+    margin-right: 60px;
+    padding: 10px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 16px;
 }

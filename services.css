@@ -1,88 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    font-family:  "Montserrat", sans-serif;
-    font-size: 14px;
-    margin: 0px;
-    padding: 0px;
-}
-
-@keyframes in {
-    0% {background-color:none; color:#ffc436}
-    100% {background-color:white; color:#0c356a;}
-}
-@keyframes out {
-    0% {background-color:white; color: #0c356a;}
-    100% {background-color:none; color: #ffc436;}
-}
-
-.container{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between ;
-    align-items: center;
-    width: inherit;
-    width: 100%;
-    height: 80px;
-    box-sizing: border-box;
-    padding: 0px 120px ;
-    background-color: transparent;
-    color: #ffc436;
-    animation-name: out;
-    animation-duration: 0.5s;
-    position: fixed;
-}
-
-.container.scroll{
-    animation-name: in;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-.container:hover{
-    animation-name: in;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-.image{
-    width: 22%;
-    height: 55px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-#logo1{
-    width: 50px ;
-    max-height:55px;
-}
-
-#logo-text{
-    font-size: 25px;
-}
-
-.links{
-    width: 55%;
-    height: 55px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.links a{
-    color: inherit;
-    font-size:20px ;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-
-/*------------------------------------SERVICES----------------------*/
-
 #services-header {
     background: url(services-bg-pic.jpg);
     background-size: cover;
@@ -709,7 +624,7 @@ button:hover {
     color: gold; 
 }
 
-p {
+#star-rating-section p {
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 30px;
