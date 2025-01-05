@@ -1,4 +1,4 @@
-.background-image img{
+.background-image img {
     width: 100%;
     max-width: 100%;
 }
@@ -99,6 +99,7 @@
 .stats-titulli p {
     font-size: 30px;
     color: #0C356A;
+    padding: 0 0 0 20px;
 }
 
 .stats-cards {
@@ -107,6 +108,7 @@
     align-items: center;
     gap: 40px;
     padding: 50px 0px;
+    margin: 0 0 0 10px;
 }
 
 .stats-card {
@@ -204,7 +206,7 @@
     height: 300px;
     perspective: 600px;
     border-radius: 50%;
-  
+
 }
 
 .flip3D>.front-x,
@@ -265,22 +267,125 @@
     white-space: nowrap;
 }
 
-.visit-kosova-banner-text p{
+.visit-kosova-banner-text p {
     font-size: 50px;
 }
 
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
 
-.faq{
+.slider-paragraph-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+    color: #0C356A;
+
+
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+
+.card-list .card-item .card-link {
+    user-select: none;
+
+    /* width: 300px; */
+    display: block;
+    background: #F2F3F4;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+
+.card-list .card-item .card-link:hover{
+    border-color: #0174BE;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #0174BE;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: black;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #0174BE;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: #0174BE;
+
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 8px;
+    width: 8px;
+    opacity: 0.5;
+    background: #0174BE;
+
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.faq {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 45px;
-    margin: 100px 0px;
+    margin: 100px 0px 0px 0px;
     gap: 70px;
 }
 
 
-.faq-icon img{
+.faq-icon img {
     width: 600px;
     height: auto;
 }
@@ -294,8 +399,9 @@
     flex-wrap: nowrap;
 }
 
-.faq-pyetje{
+.faq-pyetje {
     background-color: #0A9FFF;
+    font-size: 15px;
     height: 30px;
     padding: 15px;
     border-radius: 20px;
@@ -303,9 +409,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
-.faq-answer{
+.faq-answer {
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -317,24 +424,51 @@
 }
 
 
-.faq-btn-open{
+.faq-btn-open {
     top: 10px;
     right: 10px;
     background: none;
     border: none;
     font-size: 25px;
     cursor: pointer;
+    color: white;
 }
-.faq-btn-close{
+
+.faq-btn-close {
     position: absolute;
     top: 3px;
     right: 10px;
     background: none;
     border: none;
     font-size: 25px;
-    cursor: pointer;   
+    cursor: pointer;
     margin: 0px 5px;
 }
+
+
+.abonohu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.abonohu-text {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.abonohu-btn {
+    font-size: 20px;
+    border: none;
+    background-color: #0A9FFF;
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+}
+
+
 
 
 #overlay {
@@ -343,7 +477,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
 }
 
@@ -356,7 +490,7 @@
     border-radius: 10px;
     padding: 20px;
     width: 90%;
-    height: auto ;
+    height: auto;
     max-width: 800px;
     z-index: 11;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -411,7 +545,7 @@
 .newsletter-text form .subscribe-btn {
     background-color: #0C356A;
     color: white;
-    padding: 10px;  
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -422,4 +556,3 @@
 .newsletter-text form .subscribe-btn:hover {
     background-color: #2864b2;
 }
-

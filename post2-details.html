@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="post-details.css">
+    <script src="post-details.js"></script>
 </head>
 
 <body>
@@ -33,9 +34,21 @@
                     që të sjellim më shumë mundësi për qytetarët e Kosovës dhe të rrisim lidhjet tona me botën."
                 </p>
             </div>
+            <div class="comments-section">
+                <h3>Komente</h3>
+                <textarea placeholder="Shkruani komentin tuaj..." rows="4"></textarea>
+                <button onclick="submitComment()">Dërgo</button>
+                <div id="comments-list">
+                </div>
+            </div>
             <div class="end-post">
                 <div class="kategoria-post">
                     Destinacionet
+                </div>
+                <div class="share-section">
+                    <button onclick="sharePost('facebook')">Facebook</button>
+                    <button onclick="sharePost('linkedin')">LinkedIn</button>
+                    <button onclick="sharePost('instagram')">Instagram</button>
                 </div>
             </div>
         </div>
@@ -70,15 +83,6 @@
                         <p>19 Dec 2024</p>
                     </div>
                 </div>
-                <div class="post-item">
-                    <img src="fotot/foto6.jpg" alt="Post Image">
-                    <div class="grid-content">
-                        <a href="post6-details.html">
-                            <h4>Destinacione të Reja për 2024: Aeroporti Shton Disa Linjat Ndërkombëtare</h4>
-                        </a>
-                        <p>15 Jan 2022</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -89,6 +93,7 @@
             $("#footer-placeholder").load("footer.html");
         })
     </script>
+    <div id="footer-placeholder"></div>
 </body>
 
 </html>
