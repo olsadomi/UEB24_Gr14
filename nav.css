@@ -80,7 +80,7 @@ body{
     font-size: 1.7vw ;
 }
 
-.links{
+.linkat{
     width: 55%;
     height: 55px;
     display: flex;
@@ -89,7 +89,7 @@ body{
     align-items: center;
 }
 
-.links a{
+.linkat a{
     color: inherit;
     font-size:1.2vw ;
     font-weight: 500;

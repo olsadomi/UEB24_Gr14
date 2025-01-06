@@ -39,10 +39,15 @@ window.onload = function(){
     const subscribe = confirm("Deshironi te abonoheni ne newsletter?");
     if(subscribe){
         const email = prompt("Ju lutem shenoni emailin tuaj per t'u abonuar: ");
-        if(email.indexOf('@') == -1 || email.indexOf('.') == -1){
+        if(!isValidEmail(email)){
             alert("Nuk u regjistrua asnje email. Nuk u abonuat ne newsletter.")
         }else{
             alert("Faleminderit qe u abonuat! Nje konfirmim do t'ju dergohet ne: " + email);
         }
     }
 };
+
+function isValidEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
