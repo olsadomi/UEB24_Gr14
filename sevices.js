@@ -115,3 +115,35 @@ function calculateFee() {
 
     document.getElementById("result").innerHTML = resultText;
 }
+
+//per plotesim te kerkesave
+
+function EmriKonstruktorit(param1, param2) {
+    this.veti1 = param1;
+    this.veti2 = param2;
+
+    this.metode = function() {
+        console.log('Kjo është një metodë.');
+    }
+}
+
+// Krijimi i instancës
+let objekti1 = new EmriKonstruktorit('vlera1', 'vlera2');
+let objekti2 = new EmriKonstruktorit('vlera1', 'vlera2');
+let objekti3 = new EmriKonstruktorit('vlera1', 'vlera2');
+
+//maxNumer
+console.log(Number.MAX_VALUE); // Vlera maksimale numerike në JS
+let num = Number.MAX_VALUE * 2;
+console.log(num);
+
+//toString
+let num4 = 255;
+console.log(num4.toString()); // "255"
+console.log(num4.toString(2)); //binare
+console.log(num4.toString(16)); //hex
+
+//NaN
+let invalidNumber = Number('abc');
+console.log(invalidNumber); // NaN
+console.log(isNaN(invalidNumber));
