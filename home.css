@@ -33,6 +33,17 @@ header{
     margin-bottom: 14vw;
 }
 
+.easterEgg{
+    position: absolute;
+    left: 83vw;
+    top: 18vw;
+    width: 3vw;
+    height: 3vw;
+}
+.easterEgg:hover{
+    box-shadow: gray 0px 0px 10px 10px;
+}
+
 .title-text{
     width: 80%;
     height: fit-content;
