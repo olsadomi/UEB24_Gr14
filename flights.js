@@ -43,20 +43,6 @@ $(document).ready(function () {
     });
 });
 
- 
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.nav-container');
-    const scrollThreshold = 300;  
-    if (window.scrollY > scrollThreshold) {
-        navbar.classList.add('scroll');
-    } else {
-        navbar.classList.remove('scroll');
-    }
-});
-
- 
-
-
 
 $(document).ready(function () {
    
