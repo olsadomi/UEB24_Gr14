@@ -39,8 +39,9 @@
     padding: 10px 0 0 0;
 }
 
-.copyright{
+.copyright p{
     color: #8D8C8C;
+    font-size: 1vw;
 }
 
 .links-footer {
