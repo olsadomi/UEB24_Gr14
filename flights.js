@@ -148,4 +148,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+let numrat = [1, 2, 3, 4, 5];
 
+let numratnew = numrat.filter((a, b) => {
+    return a % 2 !== 0;   
+});
+
+console.log(numratnew);
+
+
+
+ 
