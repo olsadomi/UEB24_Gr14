@@ -28,6 +28,8 @@
                 disponueshëm për fluturimet e sotme dhe të nesërme. Për më shumë informacion, ju lutemi, kontaktoni
                 linjën tuaj ajrore.
             </p>
+            <button id="playbutton">Prishtina Airport</button>
+            <audio id="audioPlayer" src="Airport Sound Effect.mp3"></audio>
         </div>
     </header>
 
@@ -628,7 +630,9 @@
             <span id="accent-color">the world</span>
         </h2>
         <br>
-        <p>Enjoy your flight and discover the altest <b>deals and offers</b> from our partners</p>
+        <p>Shijoni fluturimin tuaj dhe <b>zbuloni ofertat</b> më të fundit nga partnerët tanë
+
+        </p>
         <br>
     </div>
 
@@ -638,9 +642,9 @@
                     <img src="car-rental-2.jpg">
                 </div>
                 <div id="content-card">
-                    <h3>Rent Point Kosovo</h3>
-                    <p>Best car rental prices! Enjoy your ride with us.</p>
-                    <a class="link" target="_blank" href="services.html#car-rentals-section">Learn More</a>
+                    <h3>Merr Makinë me qira</h3>
+                    <p>Çmimet më të mira të makinave me qira! Shijoni udhëtimin tuaj me ne.</p>
+                    <a class="link" target="_blank" href="services.html#car-rentals-section">Kliko Ketu!</a>
 
                 </div>
             </div>
@@ -650,11 +654,11 @@
                     <img src="Photos/newsletter-flights.jpeg">
                 </div>
                 <div id="content-card">
-                    <h3>Subscribe to our Newsletter!</h3>
-                    <p>Handpicked <span>holiday deals</span>, inspiration and the latest travel tips, straight to your inbox.</p>
+                    <h3>Regjistrohu në buletinin tonë!</h3>
+                    <p><span>Oferta pushimesh</span> të zgjedhura, lajmet më të fundit për udhëtimet, direkt në E-mail</p>
                     <div id="newsletter-submit">
                     <input type="email" id="email" name="email" placeholder="Enter your email..." required>
-                    <button type="submit" id="submitemail">Register</button>
+                    <button type="submit" id="submitemail" style="font-size: 10px;">Regjistrohu</button>
                     </div>
                     <p id="mesazh"></p>
                 </div>
@@ -705,6 +709,7 @@
         document.getElementById('submitemail').addEventListener('click', validate);
         messageElement.style.display = "none";  
         messageElement.innerText = "";
+        
     </script>
 
 </body>

@@ -121,16 +121,45 @@ function validate() {
 
         if (textAfterArray.length === 1) {
             isValid = false;
-            mesazhi = "Please input a valid email.";
+            mesazhi = "Ju lutemi futni një email të vlefshëm.";
         } else {
-            mesazhi = "Thank you for subscribing to our newsletter!";
+            mesazhi = "Faleminderit që jeni abonuar në buletinin tonë!";
         }
     } else {
         isValid = false;
-        mesazhi = "Please input a valid email.";
+        mesazhi = "Ju lutemi futni një email të vlefshëm.";
     }
 
     var messageElement = document.getElementById("mesazh");
     messageElement.innerText = mesazhi;
     messageElement.style.display = "block";  
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const playbutton = document.getElementById("playbutton");
+    const audioPlayer = document.getElementById("audioPlayer");
+
+    if (playbutton && audioPlayer) {
+        playbutton.addEventListener('click', () => {
+            try {
+                audioPlayer.play()
+                    .then(() => {
+                        console.log("Audio is playing successfully.");
+                    })
+                    .catch(error => {
+                        console.error("Audio playback failed:", error);
+                        alert("Failed to play audio. Please check your browser settings.");
+                    });
+            } catch (error) {
+                console.error("An unexpected error occurred while trying to play audio:", error);
+                alert("Something went wrong while trying to play the audio.");
+            }
+        });
+    } else {
+        console.error("Play button or audio player not found!");
+    }
+});
+
+
