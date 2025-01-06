@@ -1,3 +1,5 @@
+        ``
+
 $(document).ready(function () {
     // Handle click event for the "view details" button
     $(".view-details-btn").on("click", function (e) {
