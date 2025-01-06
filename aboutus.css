@@ -88,12 +88,14 @@
 
 .stats-aboutus {
     padding: 60px;
+    margin: 50px 0px;
 }
 
 .stats-titulli {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px 0px 60px 0px;
 }
 
 .stats-titulli p {
