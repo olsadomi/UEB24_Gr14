@@ -113,7 +113,7 @@ const easterDiv = document.querySelector(".easterEgg");
 const easterAudio = document.querySelector("#easterAudio");
 
 easterDiv.addEventListener("click", function(){
-    easterAudio.currentTime = 4;
+    easterAudio.currentTime = 3;
     easterAudio.play();
 })
 
